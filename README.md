@@ -1,0 +1,1 @@
+# SIMETRIA_ExtraccionFreematica
