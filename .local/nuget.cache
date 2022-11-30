@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jkSjBEd25yWUGyk88B8rIRJ/f/c6Z9sgVeMRvpFnoBWojZRxfhptoCUcdmIWIQYNe+9vxUmCZD1af163G27krA==",
+  "dgSpecHash": "bZngykKHFqTgjlshvmhM5jfD/+u8eo2aZS9dlWAPixagsya/bC88E45WAuyz1eehZAGGTOCFIseHQz1/CVc5vw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ivan\\Desktop\\Simetria\\ExtraccionFreematica\\.local\\",
+  "projectFilePath": "C:\\Users\\Ivan\\Desktop\\GIT_SAT\\SIMETRIA\\SIMETRIA_ExtraccionFreematica\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\Ivan\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\Ivan\\.nuget\\packages\\closedxml\\0.95.4\\closedxml.0.95.4.nupkg.sha512",

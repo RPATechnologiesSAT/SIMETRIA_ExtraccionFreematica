@@ -18026,9 +18026,9 @@
     "restore": {
       "projectUniqueName": "ExtraccionFreematica",
       "projectName": "ExtraccionFreematica",
-      "projectPath": "C:\\Users\\Ivan\\Desktop\\Simetria\\ExtraccionFreematica\\.local",
+      "projectPath": "C:\\Users\\Ivan\\Desktop\\GIT_SAT\\SIMETRIA\\SIMETRIA_ExtraccionFreematica\\.local",
       "packagesPath": "C:\\Users\\Ivan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ivan\\Desktop\\Simetria\\ExtraccionFreematica\\.local"
+      "outputPath": "C:\\Users\\Ivan\\Desktop\\GIT_SAT\\SIMETRIA\\SIMETRIA_ExtraccionFreematica\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
