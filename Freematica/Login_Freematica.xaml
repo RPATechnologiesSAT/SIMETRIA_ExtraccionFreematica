@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1224,1297</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1128,1897</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>LoginFreematica_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -100,54 +100,54 @@
       <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="LoginFreematica" sap:VirtualizedContainerService.HintSize="1052,1232" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="LoginFreematica" sap:VirtualizedContainerService.HintSize="1052,1832" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch: Login Freematica" sap:VirtualizedContainerService.HintSize="1010,1142" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch: Login Freematica" sap:VirtualizedContainerService.HintSize="1010,1742" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="972,905" sap2010:WorkflowViewState.IdRef="Sequence_8">
+        <Sequence sap:VirtualizedContainerService.HintSize="972,1505" sap2010:WorkflowViewState.IdRef="Sequence_8">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="930,101" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;--- Init Login Freematica ---&quot;]" />
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Chrome: Login Freematica" sap:VirtualizedContainerService.HintSize="930,674" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="1dc07bb4-971d-4513-9783-963e2a970c99" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Chrome: Login Freematica" sap:VirtualizedContainerService.HintSize="930,1274" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="1dc07bb4-971d-4513-9783-963e2a970c99" Version="V2" WindowResize="Maximize">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="896,448" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="896,1048" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NCheckState DisplayName="Existe espacio de trabajo Freematica?" sap:VirtualizedContainerService.HintSize="854,356" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="1dc07bb4-971d-4513-9783-963e2a970c99" Timeout="5" Version="V3">
+                  <uix:NCheckState DisplayName="Existe espacio de trabajo Freematica?" sap:VirtualizedContainerService.HintSize="854,956" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="1dc07bb4-971d-4513-9783-963e2a970c99" Timeout="5" Version="V3">
                     <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="Sesión Iniciada" sap:VirtualizedContainerService.HintSize="400,90" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence DisplayName="Sesión Iniciada" sap:VirtualizedContainerService.HintSize="400,225" sap2010:WorkflowViewState.IdRef="Sequence_6">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Sesión iniciada correctamente.&quot;]" />
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Sesión ya abierta en navegador web.&quot;]" />
                       </Sequence>
                     </uix:NCheckState.IfExists>
                     <uix:NCheckState.IfNotExists>
-                      <Sequence DisplayName="Necesita iniciar sesión" sap:VirtualizedContainerService.HintSize="400,90" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <Sequence DisplayName="Necesita iniciar sesión" sap:VirtualizedContainerService.HintSize="400,730" sap2010:WorkflowViewState.IdRef="Sequence_7">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Iniciando sesión en Freematica...&quot;]">
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Introduciendo credenciales Freematica...&quot;]">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -196,7 +196,7 @@
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Existe una sesión iniciada. Cerrando sesiones antigua y abriendo nueva sesión...&quot;]" />
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Existe una sesión iniciada. Cerrando sesiones antiguas y abriendo nueva sesión...&quot;]" />
                               <uix:NClick ClickType="Single" DisplayName="Click 'Iniciar sesión'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1dc07bb4-971d-4513-9783-963e2a970c99" Version="V3">
                                 <uix:NClick.Target>
                                   <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/confirm-login" DesignTimeRectangle="971, 496, 154, 50" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Iniciar sesión'" FullSelectorArgument="&lt;webctrl aaname='Iniciar sesión' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Iniciar sesión' tag='BUTTON' type='submit' class='btn btn-blue no-icon fullwidth' check:innerText='Iniciar sesión' /&gt;" Guid="8ab599d0-c724-4233-8ec7-1135ca4d188d" ImageBase64="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" InformativeScreenshot="105b9e43888e2374e35451a0e8d590ac.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
