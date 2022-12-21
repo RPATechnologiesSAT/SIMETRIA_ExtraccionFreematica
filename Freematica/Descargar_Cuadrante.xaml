@@ -1,13 +1,13 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="Rellenar_Cuadrante" this:Rellenar_Cuadrante.in_Delegacion="12" this:Rellenar_Cuadrante.in_RutaExportFolder="S:\Pruebas RPA\" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_Delegacion" Type="InArgument(x:String)" />
-    <x:Property Name="out_RutaExportFichero" Type="OutArgument(x:String)" />
     <x:Property Name="in_RutaExportFolder" Type="InArgument(x:String)" />
+    <x:Property Name="out_NombreExportFichero" Type="OutArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>996,2828</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>976,2828</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Rellenar_Cuadrante_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="44">
@@ -343,10 +343,10 @@
                         </uix:NTypeInto>
                         <Assign sap:VirtualizedContainerService.HintSize="338,71" sap2010:WorkflowViewState.IdRef="Assign_2">
                           <Assign.To>
-                            <OutArgument x:TypeArguments="x:String">[out_RutaExportFichero]</OutArgument>
+                            <OutArgument x:TypeArguments="x:String">[out_NombreExportFichero]</OutArgument>
                           </Assign.To>
                           <Assign.Value>
-                            <InArgument x:TypeArguments="x:String">[in_RutaExportFolder+"Cuadrantes_"+in_Delegacion+"_"+Now.ToString("ddMMyy_HHmm")+".xls"]</InArgument>
+                            <InArgument x:TypeArguments="x:String">["Cuadrantes_"+in_Delegacion+"_"+Now.ToString("ddMMyy_HHmm")+".xls"]</InArgument>
                           </Assign.Value>
                         </Assign>
                         <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
@@ -362,7 +362,7 @@
                         </uix:NClick>
                         <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                           <ui:CommentOut.Body>
-                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,151" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="722,1448" sap2010:WorkflowViewState.IdRef="Sequence_36">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -471,7 +471,7 @@
                                             <uix:NCheckState.Target>
                                               <uix:TargetAnchorable Accuracy="0.85" BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=65d3bb55-959a-455d-8e8e-68f8eeb85fa4&amp;app=26" DesignTimeRectangle="1040, 543, 16, 13" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="381dcda7-0720-432d-b7d6-39ea71c7c2af" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABMAAAAQCAYAAAD0xERiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABzSURBVDhPY3j++Pl/SvDadWv/f//8HYxHDSMO4zVs66atKHxkjE0Op2HXrl/7HxQa9H/OrDkoGkAYJAaSA6lBFsfrMmwG4jIIhAmGGbKB+AwCYaIiAGYgPoNAmCjDQBhkCD6DQJhow4jBo4aRjhGGff8PAHyoRr1+BzBMAAAAAElFTkSuQmCC" InformativeScreenshot="c84a270cd180a79a7b29a6195f41e955.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
                                                 <uix:TargetAnchorable.Anchors>
-                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                                     <uix:Target DesignTimeRectangle="952, 580, 92, 27" FriendlyName="'chrome.exe eSatellite'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAbCAYAAADxsuiMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFgSURBVGhD7ZbNjYMwEEZdUigHt2KlGSSO2SYi0UgOKSAHjrMY22QcDFha+8tKzOFJePwz4nmYRI2vkQQcIhzMSvjt5yZUIPhNCn8+nkJBRDgYEQ5GhIMR4WBEOJgvCR/IXBQp5bkYGpLratCTVg2Ze2quPnjhd0PNJFl3cczwcVVOJdxVdiQbzpmEz9WtqU/NefqWtZq293Ev6aqXueY6sH1xi1ou1H9NLh7yxsL38um2YfvKgBee3a+5GPvMhHRWfBDhZMcXEPawSp72uDUf8eR6l2995t/5dxXuZIaq4wK4JDbeOjOqbs98YR9nZeUrB1b4UQ+P5Nm1WwJyhacud2vvXr5ygIVP+IpK/kuxc6HlzDK2BPDxXks5aDXZ+cqBF26ZX4596ktfd/JcTJPOqfBl/D4v/aM5sWopufnK8R3hJ0aEgxHhYEQ4GBEORoSDEeFgDoUL5Ql+V8KFmoz0C8HlZHyCd+JdAAAAAElFTkSuQmCC" SearchSteps="Image" TargetType="ImageBased" />
                                                   </scg:List>
                                                 </uix:TargetAnchorable.Anchors>
@@ -528,7 +528,7 @@
                                     </uix:NTypeInto>
                                     <Assign sap:VirtualizedContainerService.HintSize="574,71" sap2010:WorkflowViewState.IdRef="Assign_1">
                                       <Assign.To>
-                                        <OutArgument x:TypeArguments="x:String">[out_RutaExportFichero]</OutArgument>
+                                        <OutArgument x:TypeArguments="x:String">[out_NombreExportFichero]</OutArgument>
                                       </Assign.To>
                                       <Assign.Value>
                                         <InArgument x:TypeArguments="x:String">[in_RutaExportFolder+"Cuadrantes_"+in_Delegacion+"_"+Now.ToString("ddMMyy_HHmm")+".xls"]</InArgument>
@@ -576,7 +576,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:CommentOut>
-                        <uix:NCheckState DisplayName="Pop-Up Exportación finalizada?" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Timeout="30" Version="V3">
+                        <uix:NCheckState DisplayName="Pop-Up Exportación finalizada?" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Timeout="60" Version="V3">
                           <uix:NCheckState.IfExists>
                             <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,431" sap2010:WorkflowViewState.IdRef="Sequence_24">
                               <sap:WorkflowViewStateService.ViewState>
