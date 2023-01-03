@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>976,1177</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1230,1281</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="31">
@@ -45,7 +45,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="55">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="110">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -100,16 +100,17 @@
       <AssemblyReference>System.Net.Requests</AssemblyReference>
       <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
       <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="682,1112" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="702,1216" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="640,101" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;--- Init Process ---&quot;]" />
+    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="660,101" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;--- Init Process ---&quot;]" />
     <Flowchart DisplayName="Business Process Flowchart" sap:VirtualizedContainerService.HintSize="660,844" sap2010:WorkflowViewState.IdRef="Flowchart_1">
       <Flowchart.Variables>
         <Variable x:TypeArguments="x:String" Name="NombreExportFichero" />
@@ -136,17 +137,11 @@
             <av:PointCollection x:Key="ConnectorLocation">300,188.5 300,238.5</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login_Freematica.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,61" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Freematica\Login_Freematica.xaml">
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login Freematica" sap:VirtualizedContainerService.HintSize="200,61" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Freematica\Login_Freematica.xaml">
           <ui:InvokeWorkflowFile.Arguments>
-            <InArgument x:TypeArguments="x:String" x:Key="in_URL_LoginFreematica">
-              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;URL_Freematica&quot;).ToString" />
-            </InArgument>
-            <InArgument x:TypeArguments="x:String" x:Key="in_User">
-              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_ConfigCredentials(&quot;Credentials_Freematica&quot;).UserName" />
-            </InArgument>
-            <InArgument x:TypeArguments="ss:SecureString" x:Key="in_Pass">
-              <VisualBasicValue x:TypeArguments="ss:SecureString" ExpressionText="in_ConfigCredentials(&quot;Credentials_Freematica&quot;).SecurePassword" />
-            </InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_URL_LoginFreematica">[in_Config("URL_Freematica").ToString]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_User">[in_ConfigCredentials("Credentials_Freematica").UserName]</InArgument>
+            <InArgument x:TypeArguments="ss:SecureString" x:Key="in_Pass">[in_ConfigCredentials("Credentials_Freematica").SecurePassword]</InArgument>
           </ui:InvokeWorkflowFile.Arguments>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -163,7 +158,7 @@
                 <av:PointCollection x:Key="ConnectorLocation">300,299.5 300,349.5</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Freematica\Navegacion_eSatellite.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,61" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Freematica\Navegacion_eSatellite.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Navegacion eSatellite" sap:VirtualizedContainerService.HintSize="200,61" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Freematica\Navegacion_eSatellite.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <scg:Dictionary x:TypeArguments="x:String, Argument" />
               </ui:InvokeWorkflowFile.Arguments>
@@ -182,7 +177,7 @@
                     <av:PointCollection x:Key="ConnectorLocation">300,410.5 300,460.5</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Freematica\Rellenar_Cuadrante.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,61" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Freematica\Rellenar_Cuadrante.xaml">
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Rellenar Cuadrante" sap:VirtualizedContainerService.HintSize="200,61" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Freematica\Rellenar_Cuadrante.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="x:String" x:Key="in_Delegacion">[io_TransactionItem(0).ToString]</InArgument>
                   </ui:InvokeWorkflowFile.Arguments>
@@ -201,13 +196,13 @@
                         <av:PointCollection x:Key="ConnectorLocation">300,521.5 300,575</av:PointCollection>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Freematica\Descargar_Cuadrante.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,61" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Freematica\Descargar_Cuadrante.xaml">
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Descargar Cuadrante" sap:VirtualizedContainerService.HintSize="334,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Freematica\Descargar_Cuadrante.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <InArgument x:TypeArguments="x:String" x:Key="in_Delegacion">
                           <VisualBasicValue x:TypeArguments="x:String" ExpressionText="io_TransactionItem(0).ToString" />
                         </InArgument>
                         <InArgument x:TypeArguments="x:String" x:Key="in_RutaExportFolder">
-                          <Literal x:TypeArguments="x:String">S:\Pruebas RPA\</Literal>
+                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;RutaExportFreematica&quot;).ToString" />
                         </InArgument>
                         <OutArgument x:TypeArguments="x:String" x:Key="out_NombreExportFichero">
                           <VisualBasicReference x:TypeArguments="x:String" ExpressionText="NombreExportFichero" />
@@ -228,7 +223,7 @@
                             <av:PointCollection x:Key="ConnectorLocation">300,645 300,691.5</av:PointCollection>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Assign sap:VirtualizedContainerService.HintSize="262,70" sap2010:WorkflowViewState.IdRef="Assign_1">
+                        <Assign DisplayName="Assign Nombre Fichero Exportacion" sap:VirtualizedContainerService.HintSize="262,70" sap2010:WorkflowViewState.IdRef="Assign_1">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:Object">[io_TransactionItem("NombreFichero")]</OutArgument>
                           </Assign.To>
@@ -249,7 +244,7 @@
                                 <av:Size x:Key="ShapeSize">200,61</av:Size>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Freematica\Cerrar_eSatellite.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,61" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Freematica\Cerrar_eSatellite.xaml">
+                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Cerrar eSatellite" sap:VirtualizedContainerService.HintSize="200,61" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Freematica\Cerrar_eSatellite.xaml">
                               <ui:InvokeWorkflowFile.Arguments>
                                 <scg:Dictionary x:TypeArguments="x:String, Argument" />
                               </ui:InvokeWorkflowFile.Arguments>
@@ -276,6 +271,6 @@
       <x:Reference>__ReferenceID3</x:Reference>
       <x:Reference>__ReferenceID4</x:Reference>
     </Flowchart>
-    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="640,101" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;--- End Process ---&quot;]" />
+    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="660,101" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;--- End Process ---&quot;]" />
   </Sequence>
 </Activity>

@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Navegacion_eSatellite" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1530,2195" sap2010:WorkflowViewState.IdRef="Navegacion_eSatellite_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Navegacion_eSatellite" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1090,1806" sap2010:WorkflowViewState.IdRef="Navegacion_eSatellite_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="66">
       <x:String>System.Activities</x:String>
@@ -83,54 +83,55 @@
       <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Navegacion_eSatellite" sap:VirtualizedContainerService.HintSize="1136,2130" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Navegacion_eSatellite" sap:VirtualizedContainerService.HintSize="640,1741" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1094,2040" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="598,1651" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Variables>
         <Variable x:TypeArguments="x:Boolean" Default="False" Name="abierta" />
       </TryCatch.Variables>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1056,1803" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence sap:VirtualizedContainerService.HintSize="560,1414" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="1014,101" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;--- Init Navegación eSatellite ---&quot;]" />
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Workspace" sap:VirtualizedContainerService.HintSize="1014,1572" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V2">
+          <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="518,101" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;--- Init Navegación eSatellite ---&quot;]" />
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Workspace" sap:VirtualizedContainerService.HintSize="518,1183" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="980,1306" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,957" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ClickType="Single" DisplayName="Click 'eSatellite'" sap:VirtualizedContainerService.HintSize="938,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                  <uix:NClick ClickType="Single" DisplayName="Click 'eSatellite'" sap:VirtualizedContainerService.HintSize="442,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/workspace" DesignTimeRectangle="293, 361, 60, 20" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'eSatellite'" FullSelectorArgument="&lt;webctrl parentid='workspace-page' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='workspace-page' tag='A' type='' class='resource-name ellipsis click-target' aaname=' eSatellite ' check:innerText='eSatellite' /&gt;" Guid="cf1a3149-4c6e-473a-91ad-982519c48552" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMXSURBVFhH7VbNShtRFO4T+R7zAj6BuMkLZDGQVV1FiuDKgnEoNSDVkoUSMSSSkIoBxaGhk4UhkkTERBcTGRhC5Os5d+4kM8l1bJouCpMjH3h/zrnnfvc7Z/JhZX0LccaSANVknLAkQDUZJywJUE3+L0g3XOChLscVXDpAszq7bxHMRYD2tYHmywhjG7ro//yh3PsvEEnA+TOd34MR2P83mIOAK1hDYNCoYU3n8T4S2RqyudzUvjegs/8zjlRrb2AeBaRMh3KrKNeiMEVABhsXzxi8yhd2bVyeygsedDCAjeOPwf1hpKo99ClJ3wZ3JhK8tnuLrh9TmIvLA88ncdpBl+4p7NVF86IETcaLJKBKCnA6SNP/RjOgSjbfRy/h+N4PTqc+dWBsS3+JEAHaWQ/u0EYhu0/jDJI0HsBBeY/XPQV0r0tYDfgEsfbtCjtfDsUFtM8mLDq7Wc1464LAKQXstdCnS9+c5YXPapaJGsE683z+lAAeHz2wOoMKyMBoj+A+3mKDH03Pw7ijeHYLqfGeEAEZEaRv5seLK+t5lO3J3GquhS6RANeBdV1DKkINjFBSCgLEBdtX4zHDaFN8ObcQAXodTX68XTlm7BLhU3MBArwDVBYOfIh0sQXLJtnR61lFvwdw+XAJhOUYRQAnrTR56YUIEOepbFJ+jBkCuhdSsu+CSuSa5PHqdWJRPvR3UyzIJvm+AmaSnsLiBFDPkrm8hVAP8ORnjpvQuwhcKpwsoyDKJ4qAJHXu6ZoMYiECuGdR47WK0Q8aIkAkybIuF7xGR3JPnZjY4Zo5MHF8UkJC1r22WUHhkeQuLyAu45IaNulALhNSh0sJjJMS9UcKyXkNVuOX+UR1OhzRb4nAp/V7HVkp0XkIEI/32ECS4mi6bKK/yN/p4WiPz+ScC9g5ryEpfRhhAgjis0QH+ea+UAAmgBpgqL6pWw/uG16HZV+9gvLTZJ0/genQtzlDCfmBqRFlPb+ZH1cOreW8tXkIWNkmMmm7sHtT+uRgNOzJZ51zbtejCYgblgSoJuOEJQGqyThhSYBqMj7Ywm/fcoFNSoXkVAAAAABJRU5ErkJggg==" InformativeScreenshot="0be04f81610ad3b776b0688851c44db1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Workspace' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
                     </uix:NClick.Target>
                   </uix:NClick>
-                  <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="938,101" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Iniciando aplicación eSatellite...&quot;]" />
-                  <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="938,867" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="10">
+                  <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="442,101" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Iniciando aplicación eSatellite...&quot;]" />
+                  <ui:RetryScope DisplayName="Retry Scope: Sesiones Abiertas" sap:VirtualizedContainerService.HintSize="442,518" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="10">
                     <ui:RetryScope.ActivityBody>
                       <ActivityAction>
-                        <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="896,601" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                        <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="400,252" sap2010:WorkflowViewState.IdRef="Sequence_15">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:LogMessage DisplayName="Log Message: Comprobando sesiones abiertas..." sap:VirtualizedContainerService.HintSize="854,61" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Comprobando sesiones abiertas...&quot;]">
+                          <ui:LogMessage DisplayName="Log Message: Comprobando sesiones abiertas..." sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Comprobando sesiones abiertas...&quot;]">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -138,7 +139,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:LogMessage>
-                          <uix:NCheckState DisplayName="Existe página inicio?" sap:VirtualizedContainerService.HintSize="854,410" sap2010:WorkflowViewState.IdRef="NCheckState_13" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Timeout="30" Version="V3">
+                          <uix:NCheckState DisplayName="Existe página inicio?" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="NCheckState_13" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Timeout="30" Version="V3">
                             <uix:NCheckState.IfExists>
                               <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,90" sap2010:WorkflowViewState.IdRef="Sequence_38">
                                 <sap:WorkflowViewStateService.ViewState>
@@ -198,10 +199,11 @@
                               </Sequence>
                             </uix:NCheckState.IfExists>
                             <uix:NCheckState.IfNotExists>
-                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,184" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,90" sap2010:WorkflowViewState.IdRef="Sequence_39">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <Pick DisplayName="Pick Sesion eSatellite Abierta?" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="Pick_1">
@@ -892,7 +894,7 @@
                             </uix:NCheckState.Target>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
@@ -922,7 +924,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1060,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="564,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
