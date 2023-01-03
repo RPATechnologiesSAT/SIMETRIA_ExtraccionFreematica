@@ -1,0 +1,947 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Navegacion_eSatellite" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1090,1806" sap2010:WorkflowViewState.IdRef="Navegacion_eSatellite_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="66">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Security</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="88">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Navegacion_eSatellite" sap:VirtualizedContainerService.HintSize="640,1741" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="598,1651" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Variables>
+        <Variable x:TypeArguments="x:Boolean" Default="False" Name="abierta" />
+      </TryCatch.Variables>
+      <TryCatch.Try>
+        <Sequence sap:VirtualizedContainerService.HintSize="560,1414" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="518,101" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;--- Init Navegación eSatellite ---&quot;]" />
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Workspace" sap:VirtualizedContainerService.HintSize="518,1183" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,957" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'eSatellite'" sap:VirtualizedContainerService.HintSize="442,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/workspace" DesignTimeRectangle="293, 361, 60, 20" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'eSatellite'" FullSelectorArgument="&lt;webctrl parentid='workspace-page' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='workspace-page' tag='A' type='' class='resource-name ellipsis click-target' aaname=' eSatellite ' check:innerText='eSatellite' /&gt;" Guid="cf1a3149-4c6e-473a-91ad-982519c48552" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMXSURBVFhH7VbNShtRFO4T+R7zAj6BuMkLZDGQVV1FiuDKgnEoNSDVkoUSMSSSkIoBxaGhk4UhkkTERBcTGRhC5Os5d+4kM8l1bJouCpMjH3h/zrnnfvc7Z/JhZX0LccaSANVknLAkQDUZJywJUE3+L0g3XOChLscVXDpAszq7bxHMRYD2tYHmywhjG7ro//yh3PsvEEnA+TOd34MR2P83mIOAK1hDYNCoYU3n8T4S2RqyudzUvjegs/8zjlRrb2AeBaRMh3KrKNeiMEVABhsXzxi8yhd2bVyeygsedDCAjeOPwf1hpKo99ClJ3wZ3JhK8tnuLrh9TmIvLA88ncdpBl+4p7NVF86IETcaLJKBKCnA6SNP/RjOgSjbfRy/h+N4PTqc+dWBsS3+JEAHaWQ/u0EYhu0/jDJI0HsBBeY/XPQV0r0tYDfgEsfbtCjtfDsUFtM8mLDq7Wc1464LAKQXstdCnS9+c5YXPapaJGsE683z+lAAeHz2wOoMKyMBoj+A+3mKDH03Pw7ijeHYLqfGeEAEZEaRv5seLK+t5lO3J3GquhS6RANeBdV1DKkINjFBSCgLEBdtX4zHDaFN8ObcQAXodTX68XTlm7BLhU3MBArwDVBYOfIh0sQXLJtnR61lFvwdw+XAJhOUYRQAnrTR56YUIEOepbFJ+jBkCuhdSsu+CSuSa5PHqdWJRPvR3UyzIJvm+AmaSnsLiBFDPkrm8hVAP8ORnjpvQuwhcKpwsoyDKJ4qAJHXu6ZoMYiECuGdR47WK0Q8aIkAkybIuF7xGR3JPnZjY4Zo5MHF8UkJC1r22WUHhkeQuLyAu45IaNulALhNSh0sJjJMS9UcKyXkNVuOX+UR1OhzRb4nAp/V7HVkp0XkIEI/32ECS4mi6bKK/yN/p4WiPz+ScC9g5ryEpfRhhAgjis0QH+ea+UAAmgBpgqL6pWw/uG16HZV+9gvLTZJ0/genQtzlDCfmBqRFlPb+ZH1cOreW8tXkIWNkmMmm7sHtT+uRgNOzJZ51zbtejCYgblgSoJuOEJQGqyThhSYBqMj7Ywm/fcoFNSoXkVAAAAABJRU5ErkJggg==" InformativeScreenshot="0be04f81610ad3b776b0688851c44db1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Workspace' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="442,101" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Iniciando aplicación eSatellite...&quot;]" />
+                  <ui:RetryScope DisplayName="Retry Scope: Sesiones Abiertas" sap:VirtualizedContainerService.HintSize="442,518" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="10">
+                    <ui:RetryScope.ActivityBody>
+                      <ActivityAction>
+                        <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="400,252" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message: Comprobando sesiones abiertas..." sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Comprobando sesiones abiertas...&quot;]">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:LogMessage>
+                          <uix:NCheckState DisplayName="Existe página inicio?" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="NCheckState_13" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Timeout="30" Version="V3">
+                            <uix:NCheckState.IfExists>
+                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,90" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info" Message="[&quot;Pestaña Inicio CASVA abierta.&quot;]">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:LogMessage>
+                                <Assign sap:VirtualizedContainerService.HintSize="338,71" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Boolean">[abierta]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <uix:NClick ClickType="Single" ContinueOnError="True" DisplayName="Click 'chrome.exe CASVA_SEGURI…'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Timeout="5" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=a36bafe4-9c43-4c9c-86a7-5878f27dd857&amp;app=26" DesignTimeRectangle="419, 496, 146, 30" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe CASVA_SEGURI…'" Guid="9bb7367d-b538-44d6-8e40-5a0bd68078bf" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJIAAAAeCAYAAADHCUctAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJGSURBVHhe7ZbRjYMwDIaZDanToG6DOkwl1qCj8JiLUxwck7SlOHB3+h8+qaS2Yzs/Ds00TQ6AvUBIwAQICZgAIQETICRgAoQETICQgAkQEjABQgImQEjAhEOFNFwb1zSC65C128y9c82ld2OyPrr+8t0eOs/unrfbCsW1ivXbOExI4XDUoY639nsxPXrXrsQjyIrrPes8n4K0EICZkN7VfgLHCKlG4X8lpgBC2gtNhw8mT5hQfKXERg2uW10z87XFdmr6JHF432DTuU76zfbJ/q/yVHVEYdA676dihwkn/ov2l9a1tEbxSv7ZnFXt3u7zvtXjECFRoe1tXNZk42TTxCGxT+Ir30T5OzQ889tDBxn8w56t6x/Lum7uKk+NyrE0YRKBxVzEFRly6dyg/LL+uZx17Vv6VolzJ5IokJoUxcWotzU5tIKQKE4iBt5b2NB6PBS281Dzs3kyqg4ZQ+dP61qY0V7lUvIv5rynb5U49xtJNeTlNIgjfX6TKwipmCfDseZnjqEFyOt6j/iscin5F3Pe07dKHCMkDxUsmxXvcG4UNU0Uy81NG0U+r4WUa37wLx3K/Mys8xRXUiK0Z/60nk4edYVl7HUun/mLnHXtW/pWicOERIQi53FLtLfef0imDY3/qwNYfGRzaM03KHMwMQ6LonQo87MkiIn9PYsdv92E/wiOMdIcpc8Sy4ulIJCifzFnUbtf39a3OhwqJPB/gZCACRASMAFCAiZASMAECAmYACEBEyAkYAKEBEyAkIAJEBIwYHI/C9XYrmYTxZEAAAAASUVORK5CYII=" InformativeScreenshot="c371c58e5d673c36eef33eb68ec2735b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CASVA_SEGURIDAD_SL' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe CASVA_SEGURI…'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=8853376e-2478-4f01-9652-eb8d74bcbc7d&amp;app=26" DesignTimeRectangle="439, 501, 115, 19" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe CASVA_SEGURI…'" Guid="64cf9cc7-f97d-4001-b858-84bcf1c3b2f9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHMAAAATCAYAAACjtzK8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIDSURBVGhD7ZXRjYMwEERpCyndoHSC0glp5CTKyJXiA8wu6/EsIQn3Ecsf7wOzXsYztmkev49QKYMaZkHUMAuihlkQNcyC2A1zuDahaYDrQGs/4t7F3pc+jMm7MfSX97/L9Hd3XvsK0veMXmfihqlGGBPHW5uNvcVPH9q5TxYe4Ib8nFz/tjE+DeG0MI/6cBAe5skfyfjy/t8VppyIAydQT6ugwobQ2fGJuHhzdc7M9eQEZn1Fi9RawIynNwisT8O5+r31pBtoPWLXl4x3oQMfBuql52MODVPMaG9jHEMxYh6YYuclPXAH4rP0cZ7FyKWXamlD/8NPSaYfAd3eSctCXvSY61rD7MJg5rnzUfPN+OB4KVAfgddOJjQTURnzPDU9khj1JEzpq2FYPU4tCzPTL8D6bA+2pvaSbg6tT0KOvdl8rNP5JsyezGPghrO89s90wnRPwIK9Vtcd/M9huvoFJ0wJDccF+YZ+E0LCTeTV6TgJ0/eS+AjwMCd0Iauw5B8oJokpa3O7GJkfxcncY2F6gS29joRpxjf95nq015tZV3oCyXUK9V6Y+/N5mNt/FbxcoT4Cbpgz2LCZFos7Pq+Rdyb8lSgI303CMEzWV0I5GOaMBmqIdXaX23e55jju9IKQ2JpZ3aY59aGnXu75mLIbZuW7qGEWRA2zIGqYBVHDLIZH+AM96aA10q5yQwAAAABJRU5ErkJggg==" InformativeScreenshot="77cab224b57db98f93c1047ba1ec064c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CASVA_SEGURIDAD_SL' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <uix:NClick ClickType="Double" DisplayName="Click 'chrome.exe CASVA_SEGURI…'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_28" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=a36bafe4-9c43-4c9c-86a7-5878f27dd857&amp;app=26" DesignTimeRectangle="675, 318, 79, 18" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe CASVA_SEGURI…'" Guid="bce537ba-bd49-47d0-ac52-e75197c8b3c0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAASCAYAAAAaJIOvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG+SURBVFhH7ZdBboMwEEW5To9RJDa9RddWVr1JZeUAlbgEEtcgB+giS5YsunAZg4fxMINLIFIXjvQVGM84nudvkhTDMLisx6TCq79qMZ61KDvvgLLzDig774AQXtu0zn5aVTBOCzW1l8IVxSLTyHl7BfOeNddZQngAaOsF47RQkgd3oZA7Z6tzmj4N3s26srKuk8Z2SoX38voxX02vJLwTFyXp/8P7GSnN8vDIfQpedy2Z65gaE40jDIiTY16QxryTyRjmV6UrIQbzafU+zzgzOn+JTyeB5vl189qhdSbERmmbtoL39l6vFOCFb2D+DoJFlNcO71fS4NEcGvfNh2bI8fewjGtZnVhflM7eWJw6j60p9BD1suHUCF7f9yhwHr1/mvPma9z9eaf5ZshQ9XqeJ8HjdV7MzWGNkiJ49+87CuDR+xS85LNEgcehhzg2y+Icilb/V3ibpwWPuex0FR5XEt4oWAxtJDpuEdzpmQLx2GHseAr5Erx0vQzP5xAwYSNiqPDZCXjP/50XdhE0PshDM+zhTGuWuUZAChS1XoOH+RMQDyzUYn48p+ZOhJe1Xyq8/N82rey8A8rOe1iD+wXIJcbT0b1RNAAAAABJRU5ErkJggg==" InformativeScreenshot="5e09f9f5b6e06f2826448f00d8a998f9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CASVA_SEGURIDAD_SL' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target DesignTimeRectangle="674, 334, 82, 20" FriendlyName="'chrome.exe CASVA_SEGURI…'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFIAAAAUCAYAAAAeLWrqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFrSURBVFhH7ZdBboMwEEV9nR6jSNn0Fl2jrHKTysoBKnEJJK5BD9BFliy96GLKuNgZj40dpRZIaJCewhhPIp4+NlHGGBD+T1Zk99klx4UYSWQlJJGVkERWIhA59APoD70KXqfz1xjOCpS60/bLtb4FddIwsvlHIBCJsnIHXqfzU1iJZyp8BH0iMg9KVuTL62U5+zuKIr80NAdNXIlY5M9sbMGKJHVJ5HhtWBoZ7NG2890S4MbtnAYaHMPv4vVanxmgdWMzWz8BSZFv712EE+l2cv6J4A0219HXEVQknhPpvhfHVQsD7eF1oi/47R2ejEjkNE0eTCStayaSb0gWn0AigdXZvqXeYz2ORN6+bx4USeuSyGISmMhkeh8QmU39srkFKd6ArEhOUeRMdtemUmyC7jfr01wQudYXCsb1ckeRW79HWgluHhWcEzmT7GObTT619QlECs+TFSn/tR9HElkJSWQlJJGVkERWwcAvQTy1fzxfIJ0AAAAASUVORK5CYII=" SearchSteps="Image" TargetType="ImageBased" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe CASVA_SEGURI…'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=a36bafe4-9c43-4c9c-86a7-5878f27dd857&amp;app=26" DesignTimeRectangle="709, 352, 107, 16" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe CASVA_SEGURI…'" Guid="6df9ef98-962a-4662-a9f2-05854304e434" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGsAAAAQCAYAAAARWoEOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHySURBVFhH7VVBjsMgDMzbIvU1UX8T9TGV8o30KTmyGGoYG5OQ7rZSujmMNmvMeOwB2i3L4k4cA6dZB8Jp1oFgmjVdO9d1GcO9zHkL7oPrLqObrbV3Auu+SQPN9LdzLMwKRl0niM1uvHzIMBzUY3T9p4zba9AL2v7erE8OyMJp1iqEWfOtV7eqRMjhJ5JzQ7ODG/wNDPHUyOQGzvVIYikf6qRG0tDibU5cFAeeTf6E8lWgWv1thhwPNAu/Tf5Wbc9XCtZYhznDzV4Ms4pGEKIRaDwI7t34yHEqJvjwNFL+qlkqX2GTHyFq0UAGN1k5qO35XeVv0CY48dCIeJ5hSy+7bhYTpxgPwhCQhFknhfdZ+cyjBFMOcyW+Gr8AGOTzhX4G1tXfFn+DNjH8Zw7F6W91hlYtwK7frNVCSrwsyE9HHtoes/Qh2uRXoP1xUPn2C2Bd1UuE4m/QpjVi3Jwh/7/SizTLg8iszaGwaiQVNuKlMDjh4lDEt7rgVwPJPFlPlV+DuK70m5o1CmBd+G7RX9MmZ1Lp0YNrtPRSmEWgjfpa81o4SbzGphoC4p4okvN1UzHuh8j5RoPxhEkewjq/RqxXXce6pgbN36IN5+gNZRN93JxhQy+mWd8HGkTl1h0I328W3ZTKST0a/snN+g6cZh0Gi/sBzBldBa+d6k8AAAAASUVORK5CYII=" InformativeScreenshot="d0bfcfe045d74efdb62838844496009c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CASVA_SEGURIDAD_SL' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <uix:NClick ClickType="Double" DisplayName="Click 'chrome.exe CASVA_SEGURI…'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_30" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=a36bafe4-9c43-4c9c-86a7-5878f27dd857&amp;app=26" DesignTimeRectangle="976, 350, 98, 21" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe CASVA_SEGURI…'" Guid="8706b137-edbc-4406-855e-f3b6251d2ad9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGIAAAAVCAYAAAC9gjt3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAITSURBVGhD7VfdjcMgDGasZJyKbaKski5TKavkkbPBJjaBI01zKifx8KngPwyfManZts11fB+diEbQiWgEnYhG0IloBJ2IRtCJaAQ7Ea/ZjcY4k8A+tYO3G2a3StlJrNPozGPJ6n7DOtk9t2GEnNas3Vv4YB9/AU3EmcTYrmZ/0K9uhkOcX8LmBDx5EGdhv9firHk/zgF3EHFHDMJ1InK623GNvFP4l0SAzg6hNYxwMFih6kZglZLeQLX61qH0u78ZrFtINsJ4fkC86EfrMWSMFKlOzp+ilcm4Ig+9D+uszwNyy/mSjc4Vi4TsCvvkAvK3mv2mfFutvBF4aGFB7ssrJKqJID0vwK3jmejZn98Jv17YkPfDA+ANMeIaQlbSlWzTPHP78PlSHjlfsjnkqtbE+OL2Rh2ehyg+Hieo34hUzvP0V/rk7M7KeV6SlXRyDmOLFc8FhfKSfUZ+yRfH7BOBxIQC8B8Z0wI+FCNB20SkVSZR9OcbSdVbW0/JP/DFcaHag89Cre3qjci1FpUE6a+0JrleYf3yV1O48rEPx9aWyOHT1+db3QfaF3xLuSp5eg6s43zZhscalTcCHjUMLHQjsHpIAg8Fkgg+1EuVXj5iu2zfRGYuoP5HcHwvxwoj2WN/Y6R9fJQxFq7B8tw+Sr7FXKHK/b74DRDnoB5rEbP6WHd8FZ2IRtCJaASdiEbQiWgCm/sBBmuld5YPnBwAAAAASUVORK5CYII=" InformativeScreenshot="dd448f36c72e70e4cd08aa89df22a634.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CASVA_SEGURIDAD_SL' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Info" Message="[&quot;Navegación completada.&quot;]" />
+                              </Sequence>
+                            </uix:NCheckState.IfExists>
+                            <uix:NCheckState.IfNotExists>
+                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,90" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Pick DisplayName="Pick Sesion eSatellite Abierta?" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="Pick_1">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <PickBranch DisplayName="Pop-Up Sesion Abierta" sap:VirtualizedContainerService.HintSize="210,61" sap2010:WorkflowViewState.IdRef="PickBranch_1">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <PickBranch.Trigger>
+                                      <uix:NCheckState DisplayName="Existe sesión abierta?" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                        <uix:NCheckState.IfExists>
+                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,90" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Sequence>
+                                        </uix:NCheckState.IfExists>
+                                        <uix:NCheckState.IfNotExists>
+                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,113" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Sequence>
+                                        </uix:NCheckState.IfNotExists>
+                                        <uix:NCheckState.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=15ad30d2-5afa-4684-8c5a-acb202985c64&amp;app=26" DesignTimeRectangle="603, 341, 113, 16" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe Verificación'" Guid="fabe4815-7619-47f8-9a88-1633ead8dd03" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHEAAAAQCAYAAAAh1pAvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIgSURBVFhH7VcNzoMgDPVY8zzGCy1eZbvMEq/CRwuFthZQP5NlhpeYrbX070HZBtfx8+gk3gCdxBsASXzNgxufKyoS3pMb5lcUGvgsbhxGt3yiDGuHwQ2Pxa363RUo+YS4EDOK+/Fy08afpbsYF/UmnESDMCB2ekfhEKD4s2v/Ax/3FIGAL5F4EQKJuCMmnzYBCuDyEXyp+M96kkDAHUj05S8Pdnr4yUSC/WjEh4gNBU7zGHVUMHySLY1o3YwQi2woJpx80smpYNkrnyJHPgWi3TOOd/9srg2EzhHAdTtyULJdT7DZ9i2+LtZh94yQftiszzEVmEepCuLJzcTwhnA7tUbIIRm7kYQ99joeK0zcM+FdaiLe1daE4f4ITGdcN9s1lg8A18P3Wt8KdZjxMxKJuAjvFGhcXKx2Bj7oTCeskym8Q3+FMY0Npjgt+7rP4ibcyARLr2PozdTwbdVTW1Orw4yfkUkk8t5+Af1A2NNEBJePJYoQer2JGvENm+MkspgEwy9MKyCl6btUz+41AbmOABk/g5GYjeRxb40zAJdr76Agwx/sWrFxGvabeKww0YxaLhLQMP73BGVjhOVrJ+SW4uLJi76L9dTyqdWRwa89giBRBoxAHY0FKqyVTOkdICRL/kLSoSGoe0z+r0LLXvkUObZic5mD5QAPI1SORtZYrp993sl3qZ5GPqU6SvEjJIkdP4lO4g3QSbwBOok/D+f+AAIYMI4hX3XFAAAAAElFTkSuQmCC" InformativeScreenshot="e6601ac74783737ab1c6023e5655cf6c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Verificación Usuarios' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
+                                        </uix:NCheckState.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </uix:NCheckState>
+                                    </PickBranch.Trigger>
+                                    <Sequence sap:VirtualizedContainerService.HintSize="400,1278" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="358,101" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Verificación de usuarios, ya existe una sesión abierta. Introduciendo credenciales nueva sesión...&quot;]" />
+                                      <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe Verificación'" sap:VirtualizedContainerService.HintSize="358,166" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=15ad30d2-5afa-4684-8c5a-acb202985c64&amp;app=26" DesignTimeRectangle="895, 447, 79, 28" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe Verificación'" Guid="b72b621d-a852-4072-91e6-b110ed1901fa" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAcCAYAAAAgLuLfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADoSURBVGhD7dVBCoMwEIXhOVJzHL1JCV5GyEkKHqEX6MIDdOFymlgpmTTS1AGN8BY/mGFWH1Fpek6MtgU8RcBTBDxFAo+ud/Qj4SUOmWUkE17isCyMjxElAU8R8BQBTxHwFFWK57glYmpcMjNsb/HesVWMZ9hcYizgFbZA9dYDWh7imcD0t3PuGNS68TyIa4jbXs7CTpibbnjv9y3TB3m/qsebn2eYZCZuW3repxPgjTx0/vvXWeCVlceJfyB4bVfL3KQA9AWKH8ZpA54i4CkCnqJiPLSe8BKHzDKSCa/4gP4LeIqAt7mJX8RDBGszI+WxAAAAAElFTkSuQmCC" InformativeScreenshot="69a8d85e5055a9c1d68afc6d965fc005.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Verificación Usuarios' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </uix:NClick>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'chrome.exe frmInicialSp…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,227" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Text="10021_erp04" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=4dc7abf4-39bd-4160-9a8a-aa8b5430119b&amp;app=26" DesignTimeRectangle="973, 571, 190, 19" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe frmInicialSp…'" Guid="19ba6efd-3297-4c45-b6ed-265385a96817" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAL4AAAATCAYAAAAu9retAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABjSURBVGhD7dKhEcNAEATBzz8Xmym+syUgIvBc0121aOms+ft8D7PMTnf4UCB8krbhr3Vd8CrCJ0n4JAmfJOGTJHyShE+S8EkSPknCJ0n4JAmfJOGTtA0f3kj4JD3CN6tsZuYHvvSQWHpOxhAAAAAASUVORK5CYII=" InformativeScreenshot="042efa07ae4aedc6f4121dc6076637c7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='frmInicialSplash' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target DesignTimeRectangle="966, 550, 54, 19" FriendlyName="'chrome.exe frmInicialSp…'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAATCAYAAADbJP5YAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEYSURBVFhH7ZRtDoMgDIZ3XeM1iAcx4RImnMKES/jDI3SUDykVHdtYMoxv4mKhtDxt5wMuqhusNd1grekGa01lYIsCMShYvemkQXbS/P5Q2bxl+m+wL1QJbAU19NB37pGzXQSYJfTknB7j3jqJzV9M3gPzjNLENeujiczzou3P9ElR90WuA8b29exTHIFRf/7eCVALGt7ezrviJYVB+ANV6hi+YxXJpVAnHXMQrPo8D7Vze6xLVGVgCURQZi1cNlzgrGMU5lMwajMVgqVjgLKjkA3MRnSDd121MRDYj5H7rxWAsTvUGUWrMG5sfIzohwAfWgDsUvBXxs/txVhi0vbC9gPyqiu2UDFexNpPzxtgbekGa00XBQN4AmeaW1Jij8GXAAAAAElFTkSuQmCC" SearchSteps="Image" TargetType="ImageBased" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'chrome.exe frmInicialSp…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,227" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Text="CasvaSimetria_1" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=4dc7abf4-39bd-4160-9a8a-aa8b5430119b&amp;app=26" DesignTimeRectangle="974, 612, 188, 19" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe frmInicialSp…'" Guid="ed5ad596-e2a5-4aab-81b3-ce302e7fb057" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALwAAAATCAYAAAAqA2eQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABUSURBVGhD7dIxDQAgAMAw/HuBD32QcGBibTIHG3PtI1V6w0OB4UkxPCmGJ8XwpBieFMOTYnhSDE+K4UkxPCmGJ8XwpBieFMOTYnhSDE/KH15qtM8FtG8fyd4u+vgAAAAASUVORK5CYII=" InformativeScreenshot="ce3b41eb40572f66d4275127aeec74cb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='frmInicialSplash' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target DesignTimeRectangle="971, 592, 69, 18" FriendlyName="'chrome.exe frmInicialSp…'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEUAAAASCAYAAAANBhNmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGHSURBVFhH7VRRjoUgDNzrbryGeQcx8RImnsKES/jhEdhOoVqhsD533/vYZRISgdIZpsUP35ChmWKgmWKgmWKgmWLg75myjL777P28bn5+jN7F5WdQNMUNHSWXcS/5Gc6Pj9lvcfYquEEMId3DPdWGKSFhPyn57P4PjVln37/BlN9AbkpB/LY6GnGCGKuL+OxIHSF7nR8XbMTKYQ25ETdQHOaxmtvU72eOgqhzNEKuCK1B9Bb5A2wO6uCk4JkpfLDadkGokJ3io9BdCDrsJFh987vHJM5LcfJNcIvogobjPDTwJTnvRX6VN0XeKUhUMyVNyEKi0/obKAlJcwB8ViosOVBFzJWBDFlXA5pr/IDJkePy88GPd69GSlS6bGnPiisZC/AaXWQ/k7c8w8qrOWscCjd+tN88n5oo6xtQ3RnevSVYG3HWcKlglzgCDFOAQHq0Z5IAZNZeTRRfiuIxT+Nkj0Y/ub0oQbzwqH8FoDVIriv8NDTH2eyAgin/G80UA80UA82UDN5/AW3pWk3+CRQWAAAAAElFTkSuQmCC" SearchSteps="Image" TargetType="ImageBased" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe frmInicialSp…'" sap:VirtualizedContainerService.HintSize="358,166" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=4dc7abf4-39bd-4160-9a8a-aa8b5430119b&amp;app=26" DesignTimeRectangle="1025, 621, 85, 20" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe frmInicialSp…'" Guid="676ef316-c7c5-4969-bfa5-ca7309300e50" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFUAAAAUCAYAAAD88XGTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGKSURBVFhH7ZNdbgMhDIR7nL7mOOlxol4lOUpzkD70GNRDcTQ76yDywyqVbGmUAAbG35q38r4rqecqoU5QQp2ghDpBCXWCEuoEdaB+llJ+StlHa6T90fK+4jXXSM6Q4Ini284N8wZ1zdfJ6h6p/Yoeh7qZGtADzaH4R8Gu9Hjd/wdq2FWv9uH/NAbVCzrbj4d3jBZbn45Hm+ecg/1q6Fn1Hjqz6sO6EvMdiIu7Oc/3tjhbbZjveqf9vfoD3QCVDgIYf3YrYGISeWqetTrLomN49VEiTxDfCR8OstbV9vW881h96V2i2zrV1zCOoML8ybrC81y6f9ERFtFZI6r5zaOe6QEQ/CHYX9c7urudrb4wfimoyGFD/NX1Hpbuc+FJAhzWL93YkT9h7dQQapAHYbwZVH1CDoJztHiGpfcsBD8Wq05rHuvd7b+uASTfiTHO6XnnsfrCeDOoECBdIjLV4HjgiQ1BhWQvQ4QqCA9ea13nMeSd9msexvdBTd2rhDpBCXWCEuoEJdSna1d+AZn4107A9jwPAAAAAElFTkSuQmCC" InformativeScreenshot="5ac334f32c8c2c1d2154ba01d97cbb3e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='frmInicialSplash' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="358,101" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Sesión iniciada.&quot;]" />
+                                    </Sequence>
+                                  </PickBranch>
+                                  <PickBranch DisplayName="Sección Rellenar Cuadrante" sap:VirtualizedContainerService.HintSize="234,61" sap2010:WorkflowViewState.IdRef="PickBranch_3">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <PickBranch.Trigger>
+                                      <uix:NCheckState DisplayName="Existe sesión abierta?" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                        <uix:NCheckState.IfExists>
+                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,90" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Sequence>
+                                        </uix:NCheckState.IfExists>
+                                        <uix:NCheckState.IfNotExists>
+                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,114" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Sequence>
+                                        </uix:NCheckState.IfNotExists>
+                                        <uix:NCheckState.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=1c375922-fd89-4d67-9514-354c2c0f15d0&amp;app=26" DesignTimeRectangle="721, 351, 101, 18" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe CASVA_SEGURI…'" Guid="3f47ed89-b8dc-448b-85f3-54ff230605d9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGUAAAASCAYAAABCWxC2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM0SURBVFhH7Za/ahtBEIdVpHCRwkUKFS4cSOG8isGNwUXcijyBUSGMGuPHMCoM9lvYjUDqVF6pRoXKK1VuZmZnT3Nzv/tjY5ACt/Dhu9Xucff7MrMZLAaD0Mi3DpycdON7R05P2/nRkeGwnTPMynP+sxu/OnDxu5ZeCkOBI3opFiTBgwQgkAQPBY7opViQBA8SgEASPBQ44gik3IU8gPF+V5GQvYeQj+l6vAhh8xRWSEDCrimCvwzbDT17Ts+2MhJIgrKex9dKI5/QPJKRQBI8FDg/N5/G6yOT8hay4l5xQkpS0pwXUUcKPYmyIixABiNC5vfxXkKPchvFIAkeCvzLpNy8hN3mJWRIhAXISBxGShtOhnD1RB9LItM9EoBAEjwU+H8phUXYgdrXarbVX2lwa+J5174qa1iCrFmEnFsaDxu+IvtSlTA+/Ak9g3/XewmZK4jn7eDAVIZUnhkiZcrvsg07nqDnrfjeDt7P4cs6+848fx3bcrqn8LNn872FrMfSUZE/NEqpjhj+Gz2QghJB2jK8FCcoow/ezS7xGq0IDqVYE7Zhe7Wfz8cUqJMiaz8qxVaEisgndM3rk6CzGGYhJSzCuqZSZP9UpfA739C1nbeVwmuWJFarI3ulb3i9Lf6KhD+6vl4KrpQiEFM1XkohQaUUmDX84rJGpchvXC1AFpLyqUpREXawFP4XvHu+jrIo8BiqSuGQjIzK/iSF12nbivvLUtZL3WDH8jGsHmivDl8lnaX4M+QQUlrPlBopWZLpKiX9bZMi7Yf2w0rpIIXFl86ShAi41XZHlflRKeX2Fdvcl7cvN1+RQvB8US0Svvnfl0rLZP4+vqNK2c20IobapirtS9fXSJFgRUpqcxRqBymxxVHgKoLbFleKyErt64LPl0YpYHBYWh1x0Evyi3kpROUQtyL4mgKvrGERHaUwIsYMEWIExUEHMD9D2lcM3I5UIftn6TfB9gX2N0k5T+ujjC4H/V5QRUoN2rIaUSmtaOitABkVtE21IhXSAoWPiFIMKqAVrYxGjARPL4WhwBG9FAuS4EECEEiChwJH9FIsSIIHCUAgCR4KHHEwKaO/o9BzTIzCPzGXCwvu7nQfAAAAAElFTkSuQmCC" InformativeScreenshot="3f5023e8e479645a8fe991efd90948de.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CASVA_SEGURIDAD_SL' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
+                                        </uix:NCheckState.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </uix:NCheckState>
+                                    </PickBranch.Trigger>
+                                    <Sequence sap:VirtualizedContainerService.HintSize="400,402" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="358,101" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Info" Message="[&quot;Sesión abierta en edición de cuadrante.&quot;]" />
+                                      <uix:NCheckState DisplayName="Pop-Up Tipo Cuadrante Abierto?" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="NCheckState_12" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                        <uix:NCheckState.IfExists>
+                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,496" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=55e9a9bf-8b77-490a-b171-8bab57a96aa2&amp;app=26" DesignTimeRectangle="1311, 436, 20, 19" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="ea453862-a5ae-49d5-94ad-1791859d39b5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJWSURBVDhPrZQvaBtRHMdPTJyoOFFxYqKBiB5MNBCRQEwKESlUJFCRwUQJEWVUlBA1V0LVmBhTJWqQiUEmBjdRODVI3cmrKLyKiCcqnph4ouK77+/llnGw3Sbygy8hud993u/P98UbjobYphxwW1EEfvwAjA5hzyh+GtGrJsyA6jWhezXo4xpUJ4JqR8ha1Pu3MMYAT2tEEXjaBFYJwS+B6z60fL86BCb8PKsBgwjohLCUaYdQjRDL/RDxt3gNZRSAUhU+vwbOA2R16iaBPvCALtXyYOvUQwY0fOjnHrLQQxL6mF5OoR6UYxSBpwR+GhLmQ90paJ6q7xUsobZB5VVIe7YbIt1dA8cXYyjmSRSAbl6TI6TXM6hHwrSG+WFh7jLY1fqFTbBStech3i0DDjind30YVqRuYlehIdgSavOhu3jkQcxZBh4WZUDZIi6P3MzsCw+GUGMIE6C1LkcqM3ymOL8lW14EZUBaAhecIxcALkBale0J8Jct+AMMt5yxuoSalwFVl7YY1dw2NWGa7Togqyu0zDAnEWKfwJ0yIM2KXgT9Zf57KdKyWOU+dTmbMApp1cfMLwFmrQrsMaH7rPB2yaVww/SXpe8MrSTLcPHEw9oVLJ55/wDWKzDdCjTtIN4z32PYduAWkHEBmrcDqxS6U0FC2IItlwLTg9CdnOW3QFU9Z16RbDQhYLnnI85hc6mwbIbp1RskVd5Nul/8JZqLuEnRTETARkGA6Un/71dPNhp/jV3CeDJ2J5eKOZIr7/zxz0G8Jg/kNGnhv8RcB8tttQFuT0P8BOyWNJsawphwAAAAAElFTkSuQmCC" InformativeScreenshot="52d57aec27d98a3dee2089aab8e6b015.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                      <uix:Target DesignTimeRectangle="1247, 456, 77, 33" FriendlyName="'chrome.exe eSatellite'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE0AAAAhCAYAAACcPyaRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF2SURBVGhD7ZTfjYMwDIezVqRuE3WAqisgNqGLVGKM3hD3wKMPpyQxucC15o+O6vfwqcRxGvnDxnTfHYH3gDQFkKYA0hRAmgJIUxClXS9X8AdFaY+vB5gA0hRAmgJIUwBpCiBNwT7S7hVZY8jdCnsHZBdpbW3J1b24c1PcXwS/kFNFbWlvI3aQ1lJ1ctTE31LOAj5SGhc1dJjvODGivDb92HpEF47iQcjN9c/Wj3mK84sQa84J+zEnO7tCt28ubSRKdoUvZHjuac6GbN0+45nAGDeWqnuWP9NpnOPv9mfX6/KNpXEnpELlOhadneH4qFtCd2SSo9xMWn4+SpsQq2FbaVyQKCDAsuakleKvSPNjLbqU/+tw0uJoyXgoMiskyuK4GKUoYio/k5bue37vDiatISe+QYlUjBcSOlB0yCgeivUyh9gon+/hGIsOz4njjeearFz4EiBNwXGk/SMgTQGkKYA0BZCmYFIamOeXNPA6kKYA0t6mox9LzqhsF7Lp/QAAAABJRU5ErkJggg==" SearchSteps="Image" TargetType="ImageBased" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=55e9a9bf-8b77-490a-b171-8bab57a96aa2&amp;app=26" DesignTimeRectangle="1073, 650, 79, 25" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="82f94717-91a2-43f6-bea6-828cf4752f12" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAZCAYAAABw43NsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFaSURBVFhH7ZZBsoMgDEA5Uln2KHIVx5s4vUWX9ijtIf7CZT4BKQFRp41laieLtyDJYPMMVDX+jSC8h8hjkMg7d1dhA+prJu/+uAsLiDwGIo+ByGMg8hiIPAb15N1a0EpDeyvk2PRgPrb3MtXkDZ0G0xjQ3VDM8/hpeQO0JwM9NnlqYUhy2LgChTT9RswK6oyPW8wlq7X4l4PPy2NxD9NoULPf8Tp15OGRnST0TWjag+soKMZ8DUoIEzVJCrUXlIgvJOSWJg9ztI7K5FFFXiIMm86nKWl6kkSIE0Zr6bqwj5Mb9lipY1BB3lzG+sQsNZjH6TrLobjnsVypY/J5ecmkedJjmR+jUgzBxmMc/4DKgiz0mW4CDyovv+MciVAvxU1kiLnPmvKUusvexVMJ7u60cS+X7mmIsIPJ2499G98DkcfgQPK+D5HHQOQx2JQnrEN9JfKE1xB5bzPCPwiyb0gaJiNEAAAAAElFTkSuQmCC" InformativeScreenshot="2df3bee34391607b9157f777b8862c7f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                      <uix:Target DesignTimeRectangle="1037, 593, 100, 21" FriendlyName="'chrome.exe eSatellite'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGQAAAAVCAYAAACwnEswAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHLSURBVGhD7ZVxzoMgDMU91jyP8UKLV9kus2RX6UepxQcCus0v6R/9JVukhUfhgQ7kmMINMYYbYgw3xBhuiDHcEGOshjxoGgYa0m+k5SUZizxmqXO8v7kVap/C/7fweF3vr1oKan4GGAICzyks+IrC/oPvF1vnaj3makNimw2R+DSPNNwW4vMoudZNgtysdtZiRO970IxxNL6nzWB+oOmpMe27Pt/5QEkfuUXMm5bbNnaLV8aH562+9Rdrb2kwUNs8gSYDuSy+p2pILCYaIEI4Mb8uUptvUjJKcrjpDMdk43gxuPD9Dexpb+S15m2pN9XQvOk4fzketRnsi+TxXe2gc25dQuMbUiuW6bXLHFPqojmhnZl3NJfS63egETdKa6mNKceHSDpQK4caTE9zPwfSeGUpR2LYrmm0dAV5LZw1X+n16+Syk9kaU4znMXhoTmkwZ3N7PjQkRJrXT059ykVqMQRfYz1tpLfATg43l5+rY8rn4lXV1CjWmeWCUnNd+zk+NkRi5ZVVIKeFvxYaU3+8DUW/SE9bKWvC9lFO58SPbn08b6LUsf7iJrY0ArjO0x91jlcNcazghhjDDTGGG2IMN8QYbogx3BBTEP0BSroh5AcqsxcAAAAASUVORK5CYII=" SearchSteps="Image" TargetType="ImageBased" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                          </Sequence>
+                                        </uix:NCheckState.IfExists>
+                                        <uix:NCheckState.IfNotExists>
+                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,114" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Sequence>
+                                        </uix:NCheckState.IfNotExists>
+                                        <uix:NCheckState.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=55e9a9bf-8b77-490a-b171-8bab57a96aa2&amp;app=26" DesignTimeRectangle="817, 465, 63, 14" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="9f25f2cc-f5a8-42a3-8f69-067bb78f192f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD8AAAAOCAYAAACYecTXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFrSURBVEhL7VWLjYMwDM1YZJ6o20QMg8Q0SKzis322z0kIDaerrlX7JJqPP/EzLzTAG+ND3rBliCFAsCdCWnYxPi/2OUK4rbIaR0t+ymB0txXyFCDOD2hAfdYomrgda4yQN1lewDl5wm+LfAHcJw8rpJDwF4H2hErgKzEl6zbLTq+JqgRVY756fTh/gnQTfzpL91xeE3A3h9RY1aM1Ur6sZ3AcGVoMkFdZVfIy37I5kefkG8pGYBF5ITuNjoTEFI3k+3uSg88Vu3yTLI7zuW/Vkg44fWP8zXNSfQv6aFNwjo1JM9ImEod5EH5f57Vvb19xNa6XBzF+52nUN3wE+jiy1KRRRwf6fZ/X+/b2FVfjenkQ5+SJEEuLFrUM1VfkyLIlnx819CVLezKn8a9lX3Co1g4t+UrWdncIVAAeyDb6qFjBeK8kxv4Wva/m8YXonEe0W15f+P0cTZy3E+q1Q0n+P3BS3KPxIf+eAPgCOtsL1GpXv6YAAAAASUVORK5CYII=" InformativeScreenshot="1855b970b368484662f4017f335a499e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
+                                        </uix:NCheckState.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </uix:NCheckState>
+                                      <Assign sap:VirtualizedContainerService.HintSize="358,70" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:Boolean">[abierta]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                    </Sequence>
+                                  </PickBranch>
+                                  <PickBranch DisplayName="Cuadrante Abierto" sap:VirtualizedContainerService.HintSize="200,61" sap2010:WorkflowViewState.IdRef="PickBranch_4">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <PickBranch.Trigger>
+                                      <uix:NCheckState DisplayName="Check App State 'chrome.exe eSatellite'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                        <uix:NCheckState.IfExists>
+                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,114" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Sequence>
+                                        </uix:NCheckState.IfExists>
+                                        <uix:NCheckState.IfNotExists>
+                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,114" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Sequence>
+                                        </uix:NCheckState.IfNotExists>
+                                        <uix:NCheckState.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=ce5a2f83-4d8f-4ce9-98cd-051f0a4f802b&amp;app=26" DesignTimeRectangle="1814, 105, 110, 13" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="e5f96054-8b66-4089-a194-b3dc4fc84cd4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAANCAYAAABIO1sPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM5SURBVFhH7ZfNbRtBDIW3lKSUqBPDnQSqJIArCaA2UkQOPuSwmY873/hpNEoMJBcDegCxSw75+DdYy9vrz9f9IR9PHov7oLLtHZfvl/356byfvpz289fzvv967Sf7/vLtpWwKuue8v0z+cOF3+XEZ+vPTaXAPe3smr1L8ovHCf2XrqNwL+xWIbz7JTz3CWmcpnymWd2sf6PXRGz0m9018E8/hQfds+EQ/6PKmHY5aHMbPn04lOPJ8bk8SAxbquQKZhaEnMRxIniNyIyRH1FMqtoP4bduubAJb1fEHMKDMq9Rla2A48N+ct7yr+uAavbb+yK9dH8/v9XePG4GHmle81OpMNwkMyGGf28IAJMvz3rzkgneL5wwhDpAP3fOyNyGGC6IujE9Ogf29i7PpHAq6t7p6m+BsMtZa0OWxruQmFv1efOXrNvTqo+kI/skLmI0+cG+ZKGFigA8JB1rwkexYnA36qU1fC6UI+VZIPiEvsfBU4YGVbYbDquF1wAcvZ+9ZXA6Qy1z+/Sx5ATz24vtVfF/KyDfNEuDDV6A4Wp4VNoKQ2vYduFwIET6jlTxISeInJ+0O3TzyzPmwz4vDj9j5XaC/d3H4+TeFXMXVakBffSorNpYDjwsn1vdcijDf2xIXucVicdicuVJ8MdcNEg7GDVgAUnzw1X8uOItcAX+Hv/I7bNeLMx+NrAbF2b18wsURy3P8vewXx2HCy2B4msPFpRCL3bOsR1iXM0E3d/52KKwW12E9cI3cfU+bhfNM4KyNd4JygLM/Z/jMdpLPsJHEXHwOTf/j8/EWhy31FVxc1dVqdAgOAPtci7AGfPA3RlhbIheKv/EA3/L/y+KImy8EHPKCzYEfQzl+jqqbcCyuY3wqs5HOMxeAzeLhtoD5hs22LJRhIPPQ4UbwVWZYg2cO1oVjt/fB0+eQS1gBO+fwZ2/ozIPc6Le5o87F4uyTJ7yIvdp7/TuA4nKULBbSarQlARSAjwUV2hk+V7YGfVOqyM4lrvg6V+UMyGVtc83IDRZ1jR8Yre8cSgo1zvlWmOPJ5XBX8fBi04f60LO+Yx+HXwp8YvwDXmgkg/B/Q+72fODfcb24Bz4I9v03n9ACZToAX44AAAAASUVORK5CYII=" InformativeScreenshot="59265c52545e29ec987a6c2dd3ad91c7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
+                                        </uix:NCheckState.Target>
+                                      </uix:NCheckState>
+                                    </PickBranch.Trigger>
+                                    <Sequence sap:VirtualizedContainerService.HintSize="400,433" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="358,101" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Sesión abierta en visor de Cuadrante. Cerrando ventana...&quot;]" />
+                                      <uix:NCheckState DisplayName="Explorador Archivos Abierto?" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Timeout="2" Version="V3">
+                                        <uix:NCheckState.IfExists>
+                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,326" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Explorador Archivos Abierto. Cerrando ventana...&quot;]" />
+                                            <Pick sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="Pick_3">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <PickBranch DisplayName="Borde Azul" sap:VirtualizedContainerService.HintSize="384,560" sap2010:WorkflowViewState.IdRef="PickBranch_11">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <PickBranch.Trigger>
+                                                  <uix:NCheckState DisplayName="Check App State 'chrome.exe eSatellite'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="NCheckState_10" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                                    <uix:NCheckState.IfExists>
+                                                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,114" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </Sequence>
+                                                    </uix:NCheckState.IfExists>
+                                                    <uix:NCheckState.IfNotExists>
+                                                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,114" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </Sequence>
+                                                    </uix:NCheckState.IfNotExists>
+                                                    <uix:NCheckState.Target>
+                                                      <uix:TargetAnchorable Accuracy="0.6" BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=b033e361-ab09-4625-b2a6-72b5fbf6a543&amp;app=26" DesignTimeRectangle="1033, 152, 22, 21" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="d078b157-1fa3-4064-aa4d-a5a3f53387e6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAVCAYAAABCIB6VAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABUSURBVEhL7dExCgAgCIVhz+jWhbuWEYSIID2HEMLhH3L4EKM5WF7UsPYZTEQaMrddN/aIf0dBp7AYgu7gG2fQXS1sURSv+bwIieY2+MbZGtYaPrEs6fMstV/fHFMAAAAASUVORK5CYII=" InformativeScreenshot="532dfa68a69cd63043ff5fbae457eb41.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                            <uix:Target DesignTimeRectangle="1024, 186, 18, 18" FriendlyName="'chrome.exe eSatellite'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACbSURBVDhP1ZFBCoMwEEW9toTeQFxIltJDCPEY9jhZTucFhZjQoCGU9sPg54d5yYydNNIfgrz34lYndrKh8GSpiiAahnEQ0xsxj73Uk6WwIojbaXSL2xPN1IdMz2IVQYzCK1KRcRbrO6Bmo83POTSFYtGU+lvLPiB8uZ1RKPzl3x9DrioD1UDQCbS9tioIyl4ErEYfl31XvwYSeQNEt8cy6CVrqQAAAABJRU5ErkJggg==" SearchSteps="Image" TargetType="ImageBased" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NCheckState.Target>
+                                                  </uix:NCheckState>
+                                                </PickBranch.Trigger>
+                                                <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                                  <uix:NClick.Target>
+                                                    <uix:TargetAnchorable Accuracy="0.6" BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=ce5a2f83-4d8f-4ce9-98cd-051f0a4f802b&amp;app=26" DesignTimeRectangle="1034, 152, 23, 19" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="a4ef76c3-fefb-42f1-990e-2ecaa7e9bb7e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABcAAAATCAYAAAB7u5a2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABUSURBVDhPYzgWGfSfVnjUcKx4GBrOwMAAx8SIY8N4XY5uEDqfECYYLMgGkmIwCBMV5uQYDMIDaziywaRaMDARissgXOLYMFFhTi4eNRwrpqHhQf8B1HvvtqiXLW8AAAAASUVORK5CYII=" InformativeScreenshot="0b566313c4d01ad9f48c938f504c26ec.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                          <uix:Target DesignTimeRectangle="1024, 186, 19, 17" FriendlyName="'chrome.exe eSatellite'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABMAAAARCAYAAAA/mJfHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACaSURBVDhP1ZJBCoQwDEXn2lK8gcxicFk8hNA5hh6ny5hXFLRqoaUIfgh+fskjaf1IRb0Y5r0X93fS//pQeLIrJWE0dd9OTGPEtGupJ7sCJmFMQbMb3Zpopj5kehYrCWMtpolFxlms52BV17SDDY2huHxKffYDbCC+TMFaFD7r19iDcnSClYLQATbNUzEInSYDWKrbByhRRZjIAvZNwzYnj2hrAAAAAElFTkSuQmCC" SearchSteps="Image" TargetType="ImageBased" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NClick.Target>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </uix:NClick>
+                                              </PickBranch>
+                                              <PickBranch DisplayName="Bordes Grises" sap:VirtualizedContainerService.HintSize="384,560" sap2010:WorkflowViewState.IdRef="PickBranch_6">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <PickBranch.Trigger>
+                                                  <uix:NCheckState DisplayName="Check App State 'chrome.exe eSatellite'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                                    <uix:NCheckState.IfExists>
+                                                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,114" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </Sequence>
+                                                    </uix:NCheckState.IfExists>
+                                                    <uix:NCheckState.IfNotExists>
+                                                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,114" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </Sequence>
+                                                    </uix:NCheckState.IfNotExists>
+                                                    <uix:NCheckState.Target>
+                                                      <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=3ba95f3b-dafa-4f22-b80b-70691f178745&amp;app=26" DesignTimeRectangle="829, 113, 18, 18" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="7257d57b-d001-4f41-a110-fc2e39b3fa43" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABiSURBVDhPY/hPJTCSDGJgYPh/7vw5KA8TgORAatABhghYIQsHVsPwyWH1GjYN+AwBAZxhhKyRkCEggNMgEIAZQMgQEKC9QTBDQDQyGxegXWDj04BPDsMgqiVIcsGwNej/fwBa8b3pkfZ5bAAAAABJRU5ErkJggg==" InformativeScreenshot="26172cc5d9c5595469952f93e933e86d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                            <uix:Target DesignTimeRectangle="818, 147, 16, 17" FriendlyName="'chrome.exe eSatellite'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACZSURBVDhPzZFRCoQwDES9thRvIH6In8VDCPUY7nH6GfOKlSqWtZSFHQgO084kjY1U4s8DvPfiVifTOIWCo6XIBnCxH3oxrRHTHaUcLQ3JBtANg1vcoaimPGh6FpENYGS63oHGWcTvAqqfYGcbLodigZTyV0uMZr50Y2QK/vU3puY3uASUmsEZsH22YjO4TEBIKR6XWILKAJEdC7X3862LNrgAAAAASUVORK5CYII=" SearchSteps="Image" TargetType="ImageBased" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NCheckState.Target>
+                                                  </uix:NCheckState>
+                                                </PickBranch.Trigger>
+                                                <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                                  <uix:NClick.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=3ba95f3b-dafa-4f22-b80b-70691f178745&amp;app=26" DesignTimeRectangle="829, 113, 18, 17" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="3c99984a-7d6a-43dc-befe-68e36f34656a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAARCAYAAADQWvz5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABiSURBVDhPY/hPJTCSDGJgYPh/7vw5KA8TgORAatABhghYIQsHVsPwyWH1GjYN+AwBAZxhhKyRkCEggNMgEIAZQMgQEKC9QTBDQDQyGxegXWDj04BPDsMgqiVIcsFgM+j/fwBqqHYxjr02UgAAAABJRU5ErkJggg==" InformativeScreenshot="c657ff9a88c9bbe4d24a0805ad0bd6b4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                          <uix:Target DesignTimeRectangle="818, 147, 16, 17" FriendlyName="'chrome.exe eSatellite'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACZSURBVDhPzZFRCoQwDES9thRvIH6In8VDCPUY7nH6GfOKlSqWtZSFHQgO084kjY1U4s8DvPfiVifTOIWCo6XIBnCxH3oxrRHTHaUcLQ3JBtANg1vcoaimPGh6FpENYGS63oHGWcTvAqqfYGcbLodigZTyV0uMZr50Y2QK/vU3puY3uASUmsEZsH22YjO4TEBIKR6XWILKAJEdC7X3862LNrgAAAAASUVORK5CYII=" SearchSteps="Image" TargetType="ImageBased" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NClick.Target>
+                                                </uix:NClick>
+                                              </PickBranch>
+                                            </Pick>
+                                          </Sequence>
+                                        </uix:NCheckState.IfExists>
+                                        <uix:NCheckState.IfNotExists>
+                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,286" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Pick DisplayName="Pick" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="Pick_2">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <PickBranch DisplayName="Borde Azul" sap:VirtualizedContainerService.HintSize="200,61" sap2010:WorkflowViewState.IdRef="PickBranch_12">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <PickBranch.Trigger>
+                                                  <uix:NCheckState DisplayName="Check App State 'chrome.exe eSatellite'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="NCheckState_11" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                                    <uix:NCheckState.IfExists>
+                                                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,114" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </Sequence>
+                                                    </uix:NCheckState.IfExists>
+                                                    <uix:NCheckState.IfNotExists>
+                                                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,114" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </Sequence>
+                                                    </uix:NCheckState.IfNotExists>
+                                                    <uix:NCheckState.Target>
+                                                      <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=b033e361-ab09-4625-b2a6-72b5fbf6a543&amp;app=26" DesignTimeRectangle="1911, 82, 13, 14" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="9329cce7-a89c-4487-9f64-acd9e933ce49" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAYAAAD0f5bSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABNSURBVChTYzgWGfSfVDwAmhgYGOAYRQEWcRSb0BWg8+HqkDlgASSF2DSA1aALgAXxaADLYxUkVROyBlwaKQsInAqwiGP1EyFML01B/wEUz4IIYYj1BQAAAABJRU5ErkJggg==" InformativeScreenshot="52dacb35d73455f2222b239f43a94a77.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                            <uix:Target DesignTimeRectangle="1813, 105, 111, 13" FriendlyName="'chrome.exe eSatellite'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG8AAAANCAYAAACn+TAxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM9SURBVFhH7ZbRbRtBDERVSlJK1InhTgJVEsCVBFAbKSMf+bjs4+1bz61WiYHkR4AGIE7LJYdD8nD2afu1bU97THsu74FtX17H9ft1e325bOcv5+3y9dICfvabbXv79lY+jbP3/H6b4uEi7vrjOs6vL+fBPfztmbxa8YvGC//B11G1F/4DyG8xyY8eodbZKmbK5bfaB7o+eqPH5L7Jb+Y9PJy9GzHRD2d50w/HWB4Xnz+dywjm+dqeFAcs1XsNQsVxTnI4sLzH5MYQgHlOq9wO8k+n08En8JWOP4AhZV2tXrgGBgT/zX2ru9IH1+i19Ud9/cZ4f6+/e9wYPGhe8aLVmdbyJDEpB35pSwMQLe/7ACwg+G0D3GHkAepx9r78zcjhJfEszE9Ogf+jy7PxHAxn3+7qbYKzyVy1cJZHXclNLud7+VWv+zhXH+2MEZ+8gNkYA3ctL4slLA6IoehAI9gL7suzST+7GatYhMi3QvIJecmFp8QHVr4ZDqwG2AEfvNx9ZHk5RF7oiu93yQvgsRd/H/L7Yka9aZaAGL4GxdHqrFDLIxGrrd+BC4YU45NaAoKYQn5+0u/grSPPXA//vDziyJ1/C84fXR5x/o2hVnE1DZxXn83KjQXB49LJ9XcuRljvfZGL2mKxPHzOXCu+mGstDyIux5uwAMTEEGv8LDqFrkC8C1jF7b7j8qxHM6thcXevnnB55PIcfz/7y+NA4WU4PK3h8tLIxe9d6hHqciacrZ3/SxRWy+tQD1yjdt9TLU/xPBMk6OM3iTnEOZ47YmY/AmbYTGJuIAdn/P4pec/Dl+cVXF7pahodhEPAP2sRaiCGeHOE2hK5VOLNB8RW/F+WR978UsAhL6jlOfR9MPu/qp4tOpbXMT6b2UznmUXgswG4FTG/abMvxTIQbB483Bix2gw1eOdwXTp+ex88fQ65iBXwcw9/9saZeVCb823t0LlYnn3yhBezV3vfl9eAwwVpKRjiarYVAoggRlGFdkfMwddgbFoJ7VziwNe5qmZALrXNmrEbLHSNfzpa3zmYNDTO9VaY86nlgFf58OIzBn2cU9++jz0uDT4xljfQiAbp/4bc7fnEv+N2eU88CLbtNwvySp3/3GuAAAAAAElFTkSuQmCC" SearchSteps="Image" TargetType="ImageBased" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NCheckState.Target>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </uix:NCheckState>
+                                                </PickBranch.Trigger>
+                                                <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                                  <uix:NClick.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=b033e361-ab09-4625-b2a6-72b5fbf6a543&amp;app=26" DesignTimeRectangle="1911, 81, 14, 16" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="c2dc314a-1f7c-4b3a-a9fa-cda2d8423125" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABHSURBVDhPYzgWGfSfHDwUNTIwMMAxigJc4igcNEXofBS1GAJIinFpAqvDKkhAEwhTTyOyJnyaKQ8cXIpwiiNzSMFDRmPQfwApN+hoKTikMQAAAABJRU5ErkJggg==" InformativeScreenshot="fb6cdcbec807dcd40e44a88e40429836.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                          <uix:Target DesignTimeRectangle="1813, 106, 111, 12" FriendlyName="'chrome.exe eSatellite'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG8AAAAMCAYAAABspeOUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM5SURBVFhH7ZbRbRtBDERVSlJK1ImhTgJVEsCVBFAbKSMf+bjs4+1bz61WiYHkx4AGIE7LJYdD8nD2afu1bU/7mLYvr+P2/bZdXq7b+ct5u369toCf/WbbXr+9lk/j7D2/X6d4uIi7/biN8+XlPLiHvz2TVyt+0XjhP/g6qvbCfwD5LSb50SPUOlvFTLn8VvtA10dv9Jjcd/nNvIeHs3cjJvrhLG/64RjL4+Lzp3MZwTwv7UlxwFK91yBUHOckhwPLe0xuDAGY57TK7SD/dDodfAJf6fgDGFLW1eqFa2BA8N/dt7orfXCNXlt/1NdvjPeP+nvEjcGD5hUvWp1pLU8Sk3Lg17Y0ANHyvg/AAoLfNsAdRh6gHmfvy9+MHF4Sz8L85BT437s8G8/BcPbtrt4mOJvMVQtnedSV3ORyfpRf9bqPc/XRzhjxyQuYjTFw1/KyWMLigBiKDjSCveC+PJv0s5uxikWIfCskn5CXXHhKfGDlm+HAaoAd8MHL3XuWl0Pkha74fpe8AB578fchvy9m1JtmCYjha1Acrc4KtTwSsdr6A7hgSDE+qSUgiCnk5yf9Dt468sz18M/LI47c+bfg/N7lEeffGGoVV9PAefXZrNxYEDwunVx/52KE9d4WuagtFsvD58y14ou51vIg4nK8CQtATAyxxs+iU+gKxLuAVdzuOy7PejSzGhZ3j+oJl0cuz/H3s788DhRehsPTGi4vjVz83qUeoS5nwtna+b9EYbW8DvXANWr3PdXyFM8zQYI+fpOYQ5zjuSNm9iNghs0k5gZycMbvn5K3PHx5XsHlla6m0UE4BPyzFqEGYog3R6gtkUsl3nxAbMX/ZXnkzS8FHPKCWp5D3wez/6vq2aJjeR3js5nNdJ5ZBD4bgFsR85s2+1IsA8HmwcONEavNUIN3Dtel47f3wdPnkItYAT/38GdvnJkHtTnf1w6di+XZJ094MXu19315DThckJaCIa5mWyGACGIUVWh3xBx8DcamldDOJQ58natqBuRS26wZu8NC1/ino/Wdg0lD41xvhTmfWg54lQ8vPmPQxzn17fvY49LgE2N5A41okP5vyN2eT/w77pf3xAfBtv0GwvaR9zt97T4AAAAASUVORK5CYII=" SearchSteps="Image" TargetType="ImageBased" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NClick.Target>
+                                                </uix:NClick>
+                                              </PickBranch>
+                                              <PickBranch DisplayName="Barra Blanca &amp; Aspa Gris" sap:VirtualizedContainerService.HintSize="219,61" sap2010:WorkflowViewState.IdRef="PickBranch_10">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <PickBranch.Trigger>
+                                                  <uix:NCheckState DisplayName="Check App State 'chrome.exe eSatellite'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="NCheckState_9" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                                    <uix:NCheckState.IfExists>
+                                                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,114" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </Sequence>
+                                                    </uix:NCheckState.IfExists>
+                                                    <uix:NCheckState.IfNotExists>
+                                                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,114" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </Sequence>
+                                                    </uix:NCheckState.IfNotExists>
+                                                    <uix:NCheckState.Target>
+                                                      <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=72796c93-d8a6-4960-9096-ef6dc022ba02&amp;app=26" DesignTimeRectangle="1909, 80, 16, 19" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="ba252444-2b8a-4f8e-9e40-3d68013ed108" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAATCAYAAACZZ43PAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABgSURBVDhPY/hPIRhuBjAwMPw/d/4clIcJQHIgNcgAhQdWwMKB1RBcchhewKYQl2YQwBoGyBrwaQYBrAaAAEwjPs0gQBsDYJpBNDIbG6BuIOJTiEsOxQCKExI5YNSA//8B+ZRuOYpz88EAAAAASUVORK5CYII=" InformativeScreenshot="323a64036c9a67d14833c719e617c4be.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                            <uix:Target DesignTimeRectangle="1814, 105, 110, 13" FriendlyName="'chrome.exe eSatellite'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAANCAYAAABIO1sPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM5SURBVFhH7ZfbbRwxDEWnlKSUbCeGOwm2kgCuJMC2kTLykY+JDkdHvqPVJgaSHwO+AKEhRV6+BuP1tv/a9w95f/KxuHcqWzsKt++3/fnpul++XPbr12u7/Nlv9v3l20vZFHTveX6Z/OHC7/bjNvTnp8vgHvZ2Jq9S/KLxwn+ydVTuhf0E4ptP8lOPsNZZymeK5dnaB3p99EaPyX0X38R7eNC9Gz7RD7q8aYejFofx86dLCY6cz+0kMWCh3iuQWRh6EsOB5D0iN0JyRD2lYjuI37btZBPYqo4/gAFlXqVetgaGA//dfcu7qg+u0Wvrj/za9fH+UX+PuBF4qHnFS63OdJPAgBz2tS0MQLK8781LLni2eO4Q4gD50L0vexNieEHUhfHJKbC/dXE2nUNB962u3iY4m4y1FnR5rCu5iUV/FF/5ug29+mg6gn/yAmajD9xbJkqYGOBDwoEWfCQ7FmeDfmrT10IpQr4Vkk/ISyw8VXhgZZvhsGp4HfDBy91bFpcD5GUu/36XvAAee/H5FN+XMvJNswT48BUojpZnhY0gpLb9AC4XQoTPaCUPUpL4yUm7QzePPHM+7PPi8CN2fhbob10cfv5NIVdxtRrQV5/Kio3lwOPCifU5lyLM97rERW6xWBw2Z64UX8x1g4SL8QYsACk++Oo/F5xFroC/w1/5Hbbz4sxHI6tBcfcon3BxxHKOv5f9xXGY8DIYTnO4uBRisXuX9Qjrcibo5s7fDoXV4jqsB66Ru+9ps3DOBM7aeCYoBzj7c4fPbCf5DBtJzMXn0PQ/Ph+vcdhSX8HFVV2tRofgALDPtQhrwAd/Y4S1JXKh+BsP8C3/vyyOuPmFgENe0P6POwZ+DOX4OapuwrG4jvGpzEY6z1wANouH2wLmN2y2ZaEMA5mHDjeCrzLDGrxzsC4cu70Pnj6HXMIK2LmHP3tDZx7kRr/PHXUuFmefnPAi9mrv9e8AistRslhIq9GWBFAAPhZUaHf4nGwN+qZUkZ1LnPg6V+UMyGVtc83IHRZ1jR8Yre8cSgo1zvlWmOPJ5XBX8fBi04f60LO+Yx+HXwp8YvwDXmgkg/B/Q+52fuDfcV7cB94J9v03HqUXBR4iW5kAAAAASUVORK5CYII=" SearchSteps="Image" TargetType="ImageBased" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NCheckState.Target>
+                                                  </uix:NCheckState>
+                                                </PickBranch.Trigger>
+                                                <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_19" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                                  <uix:NClick.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=32964d84-32c8-4683-a7fe-f4761813b572&amp;app=26" DesignTimeRectangle="1909, 80, 15, 18" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="0cda703c-60c6-4216-abfe-ccbf86646605" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA8AAAASCAYAAACEnoQPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABgSURBVDhP3ZJLDkAREARnYeH+B+NIIy0m8elZCBtq49FdgjzRA36QRURTTm22ggwdY5BrGCLdgGXLsVmJrQF6577siYDKwCRPBPdlEzH23zP3HswrAZYN8tFPssuTsmoBTkbmskyuLZAAAAAASUVORK5CYII=" InformativeScreenshot="f971228db2cf594e5be7bbb66f271f03.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                          <uix:Target DesignTimeRectangle="1813, 103, 111, 17" FriendlyName="'chrome.exe eSatellite'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG8AAAARCAYAAADT7fLRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANtSURBVFhH7ZbbbdtAEEVVSlJK1EngTgJVEsCVBHAbKSMf+WD2DPesL1erxIH9I0AXGJM7jzsvmtRpe+Bu8VjeHeO0/W5/H3KX8ljeHcu+vI6XHy/b09fLdv5y3i7fLs3hV7ds2/P359IpnLVz/zz5w4Xfy8+XcX76eh7cQ9+uyasUv2i88B90HZV7oT+A+OaT/NQjrHWW8pliubf2gV4fvdFjcl/FN9EOD2dtwyf64Sxv6uEYy8Pw+dO5BGeuT+1KcsBStSsQWhznJIcDSTsiN0IBiOeUiu0g/nQ6HXQCXdXxFzCkzKvUA9fAgOC/sre8q/rgGr22/sivXh/tt/q7xY3AQ80rXmp1prU8SQzKgV/a0gBES3sfgAkE9zaADSEOkI+z9tI3IYaHxLMwPjkF+rcuz8ZzMJx9uqu3Cc4mY62FszzWldzEcr4VX/m6jnP10c4I/skLmI0+cNfyMlnC5AAfkg40gj3hvjyb9LWbvhZLIfKtkHxCXmLhqeIDK90MB1YD7IAPXmxvWV4OkQe6/LsteQE89uL9Ib4vZuSbZgnw4W1QHC3PCrU8ApHa+g24YEgRXqlVQBCTyNdP6h28eeSZ86Gfl4cfsfO94PzW5eHnN4ZcxdVq4Lx6bVZsLAgel06s97kYYb7XRS5yi8Xy0DlzpfhirrU8iDCOJ2EBiPHBV/+56Cx0BfxdwMpv1x2XZz6aWQ0L2618wuURy3V8P/vD40DhZThczeHyUohFry3rEdblTDibO39LFFbL67AeuEbuvqdansVzTRCgjnsCc4izPzZ8Zj0FzLCZxNxADk7//VXyGocuzyu4vKqr1eggHAL6uRZhDfjgb4ywtkQuFX/jAb7l/4/lETc/FHDIC2p5Dn0fzP5T1bNJx/I6xmszm+k8cxHobABui5iftFmXxTIQZB483Ai+ygxr0OZwXTp6ex88fQ65iBXQY4c/e+PMPMjN+Tp31LlYnn1yhRexV3vfl9eAwgUpWTDE1WxLBCgCH4sqNBs+B12DvilVaOcSB77OVTkDclnbXDNyhUVd40dH6zsHk0KNc74V5nhyOeBVPLzo9KE+zlnfvo/dLwU+MZY30IgG6UdD7nZ94P24Xt4Dd4PX5dW3LyU/qJMk/sf2+I/7UPQfLF0EQ/Z8ZesC0g8cbF3EfH7gndi2P2t4M2Ztmf+DAAAAAElFTkSuQmCC" SearchSteps="Image" TargetType="ImageBased" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NClick.Target>
+                                                </uix:NClick>
+                                              </PickBranch>
+                                              <PickBranch DisplayName="Boton Rojo &amp; Aspa Blanca" sap:VirtualizedContainerService.HintSize="228,61" sap2010:WorkflowViewState.IdRef="PickBranch_8">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <PickBranch.Trigger>
+                                                  <uix:NCheckState DisplayName="Check App State 'chrome.exe eSatellite'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="NCheckState_7" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                                    <uix:NCheckState.IfExists>
+                                                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,114" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </Sequence>
+                                                    </uix:NCheckState.IfExists>
+                                                    <uix:NCheckState.IfNotExists>
+                                                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,114" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </Sequence>
+                                                    </uix:NCheckState.IfNotExists>
+                                                    <uix:NCheckState.Target>
+                                                      <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=3ba95f3b-dafa-4f22-b80b-70691f178745&amp;app=26" DesignTimeRectangle="1913, 87, 11, 13" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="93738a0b-df41-4d2a-b47c-d39d2f723c97" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAAsAAAANCAYAAAB/9ZQ7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA1SURBVChTYzgWGPSfWDzYFMMAOhsZo5iMDJDFYRjDGbgUgjB5JsMAOhsZYzgDHx4UioP+AwCCB2/UjB3qCQAAAABJRU5ErkJggg==" InformativeScreenshot="567016121d80bb976c20e4d7771fe95a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                            <uix:Target DesignTimeRectangle="1811, 108, 113, 16" FriendlyName="'chrome.exe eSatellite'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHEAAAAQCAYAAAAh1pAvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANcSURBVFhH7ZbbbRRBEEU3FAiFzcRyJmgjQXIkSJsGYfDBx9Cnpk+7uqYXjPDPWnulYqbrcevVzPq0PXD3eCzxA+C0/Wr/PuSu5bHEDyDzEjuu36/b89NlO385b5evl2b72S3b9vLtJXQKZ+28vxR/uPC7/riO8/PTeXAPfXtmXiX4ReOFf9J1RO6FfgLxzSfzU4+w1irhU2J5t/aBXh+90WPmPsQ30Q4PZ23DJ/XDWd6sh+OwRBw+fzqHEMTzuT0pArBc7QrEFsk5J4EDyXZEboRCEM9ZIraD+NPpNOkEuqjjD2BYOa8SF6+BQcF/sLe8q/rgGr22/sivXh/tt/q7xY3AQ80rXmp1ptMSJTM4D/7SlgcgXNr7IEwkeLcRbAhxgHyctYe+CTFcFs/C+Mwp0L91iQ4gD4iztz16K3A2OdZaOMtjXZmbWM634iNf13GOPtoZwT/zAmajD9zTEnPSDIsA+JB8oBHtifcl2qyf4+xr0RQk3wqZT8hLLDzRRMJKV+HgYpAd8MGL7S1LzMPkYod/t2VeAI+9+D7F9wWNfGWWAB++DsHR8qwwLRECJG7BDbhoyBE+tVFISkBCP0tZ7wLMI0/Nh74uET9i67vg/NYl4udvELmCq9XAefU5jdi0KHhcPrG+5wUJ870udJFbLJaIzpkrwZfmOi0RQpzGzViABPjgq38tPhe8Av4uYuW36+Ylmo+mVkPDdiufcInE8hy/r/0SOVh4GRJPc7jELMSi15brEdblTDibO/+tEVgtscN64Bq5+56mJdoEzwwC1fEOQR5m9ceGT9VTSIVNZdRG8gD13z8xr3Ho8nkFlxh1tRodiMNAX2sR1oAP/sYIa8vIy8XfeIBv+P9licTVywGHvGBaosPfB7T/ievZ5GOJHeNzmpvqPLUYdDYCt8XUm1d1uWgGg9QFwI3gq1RYgzaH7PLR2/vg6XPIC1kBPXb4c2+cmQe5OR9zpzoXS7RPnvAi9mrv8xIbMLgoJRdOgmi6JQQUg4/FBZoNn0nXoG+WKLhziYmvc0XOBLmsrdaMHLCoa/xx0vrOA8pCjTXfCjWeXA56FQ8vOn2oj3Oub9/H7pcFPnFY4kAjHOTvDbnb84H/x+0lPnA3OC4xn0PyD2+RjH+xPf4HviO27Td9D/hoodRkrQAAAABJRU5ErkJggg==" SearchSteps="Image" TargetType="ImageBased" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NCheckState.Target>
+                                                  </uix:NCheckState>
+                                                </PickBranch.Trigger>
+                                                <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                                  <uix:NClick.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=3ba95f3b-dafa-4f22-b80b-70691f178745&amp;app=26" DesignTimeRectangle="1910, 86, 15, 16" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="55a7a4ad-ff8e-4b88-a6b1-6e03836ab802" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAYAAADJViUEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA3SURBVDhPYzgWGPSfXDyqGYphAJ2NjnHajAywyYMwXmfj0wjC1LcZBtDZ6BivswnhUc0k4aD/AMlcWUtA2+3yAAAAAElFTkSuQmCC" InformativeScreenshot="95da6b93eb0a161420894ac87271673f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                          <uix:Target DesignTimeRectangle="1813, 109, 112, 14" FriendlyName="'chrome.exe eSatellite'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAOCAYAAAD3yJj6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANLSURBVFhH7ZbBbRtBDEVVSlJK1InhTgJVEsCVBFAbKSOHHDbzuPPGf0ejxAdfBOgDzGo45Ocnudj4tD3x0Dhtf9q/T3tYey7wwW1fYMf153V7fbls52/n7fL90gJ+95tte/vxVj6Ns/f8fpvi4SLu+us6zq8v58E9/O2ZvFrxi8YL/8HXUbUX/gPIbzHJjx6h1tkqZsrlt9oHuj56o8fkvslv5j08nL0bMdEPZ3nTDwfnsUAOX7+cy0jg+dqeCAAs1nsNUgVyzgJwYHmPyY0hAvOcVrkdJfR0OvgEvtLxDzCorKvVS9fAkOC/uW91V/rgGr22/qiv3xjv7/V3jxuDB80rXrQ6U+5rgRKZmEO/tMUBgpf3fQgWEfy2Ce4w8gD1OHtf/mbk8KJ4FuYnp8D/0QXafA6Hs2959TbB2WSuWjjLo67kJpfzvfyq132cq492xohPXsBsjIGbmFpgFkwoABBD4YFGshfdF2ijfoIzVsGIkW+F5BPykgtPNRBY+WY4tBpiB3zwcoef+5W2rC94qSu+3yUvgMde/H3I78sZ9aZZglpO+yoUR6tzD7VAkrHa/h24ZIgxPq8lIsgp5qco/Q7fOvLM9fDPCySO3Pm34PzRBRLn/znUKq6mgfPqE1q5sSR4XDy5/s7lCOu9L3NRWywWiM+Za8U3LbMWCBkB441YAHJiiDV+Fp5iVyDeJazidt9xgdajodXAuLtXT7hAcnmO/0/7C+RQ4WVAPK3hAtPIxe9d6hHqciacrZ1/WxRWC+xQD1yjduypFmgDPBMk6eM3yTnIOZ47YmY/ImbYUGJuIodn/P5Zec/Dl+cVXGDpahodhoPAP2sRaiCG+BweUFsiF0u8+YDYiv/PAsmbXww45BW1QAe/D2f/M9azhccCO8YnNBvqPLMQfDYBt0LmN272pWCGgs3DhxsjVpuhBu8csIvHb++Dp88hl7ECfu7hz944Mw9qc76tHToXC7RPnvBi9poz3xfYgNMlaSka8mq4FQMIIUZhhXZHzMHXYGxaie1c4sDXuapmQC61zZqxGyx0jT9EWt85nDQ0zvVWmPOp5ZBX+fDiG4to+jinvn0fe1wafImxwIFGNog/G3K35xOfg9sFPvFA2La/Hxk4RHTqDUcAAAAASUVORK5CYII=" SearchSteps="Image" TargetType="ImageBased" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NClick.Target>
+                                                </uix:NClick>
+                                              </PickBranch>
+                                            </Pick>
+                                            <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=677e0df1-08c9-4cec-88c2-afc89772ba80&amp;app=26" DesignTimeRectangle="1074, 650, 76, 25" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="1b9fd709-42c3-4347-9ed0-ef0c907c614e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAZCAYAAACb1MhvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFYSURBVFhH7ZZBsoMgDEA5Uln+o8hVHG/i9BZ/aY/Sf4guXKYEpAREbQaZaf9k8RYkGWyegarmxwzC+4gwJi9hP8OvcMBK2P3vLmwgwpiIMCYijIkIYyLCmLQVdutBKw39rZCrZgTTbO9tmgqbBg2mM6CHqZiv498Jm6C/GBixsUsPU5LDZhUopBsPYlbKYHzcYq5ZrcW/EHxeHot7mE6DWv0OPu2E4XFcGh+70KgH11FKjPkabDxMziIm1F5RHL6EkNuaMMzROiqwjmbCEknYaD41SaOLGEKcJFpL14V9nNCwx05dBY2ErQXsT8ZWU3mcrrMcynoduZ26StoISybKkx65/IiUYgg2G+P4J1KWYqHPdJP2RcLyO8uRSPQi3OSFmPsEKU+ju7BdPG3c3YU27oXSPQ2R9AXCzuPcZs9AhDH5cGGfhwhjIsKYFIUJ+yTChPcQYSxmeALJ7EyZ5Faw7gAAAABJRU5ErkJggg==" InformativeScreenshot="297bf368d225697babfd45eb4f65c0ab.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                      <uix:Target DesignTimeRectangle="1035, 590, 103, 22" FriendlyName="'chrome.exe eSatellite'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGcAAAAWCAYAAADdP4KdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHSSURBVGhD7ZZ9joQgDMU91nge44WMV5m5zCRehaXU4gP5cJ2ZpH/0l7iRFp6FB8wOzlCLmaMYM0cxZo5izBzFmDmKMXMUY+YoxsxRTGbO003D4Ib4jG597ymFPGeuc1w2avnaJ//3LjRe5vuploCa/6dgDoi9Jj/5bxT5Cz6b+Jlv6xG/NCe0yRyOT/PohsfqaJ9yrnbCIDeLtaWYc9viNUMcN0FLm8D84KaXxKTv/r7Q5uI+fLqIza2PY+wRL4z370d9+xNqr2kQUNs8gSYBuSRepmlOKCyYwaJYBF0psU0nLJrGOTSAoBgvIk0MF+F8MlvaB2mtaZvrjTVUbwD8fj4etQnsi6TxU+2gc21eB53fnFLhRKud54hcF43y7cTI3reEVr+ORlg0qaU0Jh/vI3Fz7XQ1iJbm+Rs5nWtN6Alju6RR02X46ri6EYRWv0Yu2bG1Mdl4GoMb6JIGcTVX5qY5PlI9onwaYi5QiiF41bW0kdZkGzlcaHovjsnfs+usqpHNM8l5peq8Ct/w3DaHY/mxFiAnk3ivboz98ZRk/QItbSGvCdu9nHwTf7DL42lBuY79CQta0/DgPC//Q0DxrjmGJswcxZg5ijFzFGPmqMW5P9Xit2roEY8WAAAAAElFTkSuQmCC" SearchSteps="Image" TargetType="ImageBased" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NClick.Target>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </uix:NClick>
+                                          </Sequence>
+                                        </uix:NCheckState.IfNotExists>
+                                        <uix:NCheckState.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=ce5a2f83-4d8f-4ce9-98cd-051f0a4f802b&amp;app=26" DesignTimeRectangle="287, 466, 51, 45" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="7aa426b0-729c-45f6-96d7-d4bb23be80f0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADMAAAAtCAYAAAADfVPBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGgSURBVGhD7ZhLboQwDIZzJaReCOUqaA6DxFWYw8yCpZs4jzrPMi20BnnxS8QOdr5gIsVqe21wFwkMV90VZgGtFKhxSSY4+wDTk9p+qzNiFjADDB8K9EwnXRhmmicDNMGa2y8JYxIso4LhsRZ2HD8NrC1Hr6+vSDaD+NbHEOcWMcnc3KdH+56GpcjpbbMGlWx6A6b/TAAwSeqLCWwyukgc+4Xkcytxmptp4qBvP4yRnYyHAbFj0rAgJ/sVHVz2fnec+zpxskpAFYeUUxvmtcKEhwGxnwYTclV8lZwtdWCM4q7QRYSkwU9Lh77fG7s4sZS+jUPLzuutMvNyPzCxR0AKaVVbRGvsnt1P7mLFDaqtI8lpZMusD3N9CQxXCQxXCQxXCQxXCQxXCQxXCQxXCcwe2et0vEwR4Y0RL1vZBewA/cGXqdwcT5LAvKcaDLX552pD0Ci7/8dewf/0APbAmIV2GoJpN8j7+MKk/tiLw8W3+nSlGMKQhuA1YXoNwbzMvI9zmdUbgkYIEA4AEodnE7AG+zMJzLG6FcxxEhiuuhHMBp8ec7OlCvfbIgAAAABJRU5ErkJggg==" InformativeScreenshot="23be2624ba2b1051ce86e06b6b0dd7e7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target DesignTimeRectangle="245, 536, 90, 21" FriendlyName="'chrome.exe eSatellite'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFoAAAAVCAYAAADGpvm7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG5SURBVFhH7ZVfjoMgEIe5kokXMlzF9DAmXsUeZh98ZGWGkeHPuNO0ZbNbHr60KIw/PhDN/rW7zvvpohvRRTeii25EF92ILroRqejFOmPMyXDbks6PszprBjffa/c+iygaJHMpm5vHZ2Vz0X9V+mtyB9Eo1S5Zh/vsBmPdyq89RBdNoGhRqF8A/hBcEDpacGHyIDW5/jeOM9MKfdepvEZj7DQc16VMcRxtDl2tkGfx88W+yRsLHqgO9af2wWXuei4iih5nt7EbCN/p+L88SkL4S9G1fpy8n3RkSRk4V7WwbWiuIFbIdxylOC67nsDu+aP3lF6i39FinzwIb0v/A8nH96IfIWY4UNUqa/vdCRsJatP4AIhT5g7jpU2gP6NfLTqpxxa0NjFCyqCulbfZvLXzE5+FbDd/TElHhwdWiT/IP4CvEIYqV4yF9W2oU5toFtj307zCCUIGda1sTom07N6JNnfEy87rRNEekBRfnWKHhzDFfT5usixYGvL8iMAridKgPR5jNDsaqGXQ1sI2fhz5+ACIi7WLj99V7sRd+Wakov89Py3i++iiG9FFN+LDRP8eXXQjuugm7O4brAlE9CHYlqgAAAAASUVORK5CYII=" SearchSteps="Image" TargetType="ImageBased" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NCheckState.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </uix:NCheckState>
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="358,101" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info" Message="[&quot;Ventana visor de Cuadrante cerrado correctamente.&quot;]" />
+                                    </Sequence>
+                                  </PickBranch>
+                                  <PickBranch DisplayName="Página Inicio" sap:VirtualizedContainerService.HintSize="200,61" sap2010:WorkflowViewState.IdRef="PickBranch_2">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <PickBranch.Trigger>
+                                      <uix:NCheckState DisplayName="Existe página inicio?" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                        <uix:NCheckState.IfExists>
+                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,114" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Sequence>
+                                        </uix:NCheckState.IfExists>
+                                        <uix:NCheckState.IfNotExists>
+                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,113" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Sequence>
+                                        </uix:NCheckState.IfNotExists>
+                                        <uix:NCheckState.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=8853376e-2478-4f01-9652-eb8d74bcbc7d&amp;app=26" DesignTimeRectangle="261, 347, 91, 17" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe CASVA_SEGURI…'" Guid="508279d2-09cf-4bd3-9047-cff792388d09" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFsAAAARCAYAAACy9dCTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGqSURBVFhH7ZVNcsIwDIVZ9hochytwD27AObLjJMxwhG67YMGSZZau5B/52bGM01J3MmPNvIEoivL8WZjd59fDDPXR7vGxN0N9NGB31IDdUSnsw8VwzCfIbUjPq/d+uhlzvxRr/lMp7Olh5omAX89J0VYksAv3fiwewDdtHMA+mvl+M0/5TAu3oO3A5qZhonnC0TRdS+DUt+TF6NnMPsXxun+lHsSAMWwdHiP2u+8P65NAkAsfPHj+OtSt8sr5OLgRNjWRItzN7Pyzi5uO9XwOnvPhk3Mt/bV6VPKsA1OEDQtW/Wk+3uWV5GGzUYJ9CDfitTSEh1jVfB68OLtoFziliz4BhlKfCBdJ4l5F2DmgPOh92noQ3q+8khxsblgKaqyZWJuPCj9NN23qApT6mHfP5hvXBHuN7xbY4brileVgZxNiFV6ima3l8WXcezE5cJYpfdR6VPKsOzdfwdb8aT6SY0GpafJKIth8E4+QILdL1jwbCoE72ZIXcw6GhJjT+lTqQXahNqiHdmYDIKuivyy/8OEBrvLK+Qg+/kEO/bkG7I4asDtqwO6mvfkG1XjQPy6can4AAAAASUVORK5CYII=" InformativeScreenshot="0f63d2a5a271d8e7aebbc8bf57a0adc8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CASVA_SEGURIDAD_SL' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target DesignTimeRectangle="270, 281, 74, 15" FriendlyName="'chrome.exe CASVA_SEGURI…'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEoAAAAPCAYAAABDRVmuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFSSURBVFhH7VUxksIwDLzyvsFz+AL/4Ae8g46XMJOPUKSkTKmzN1EsCTnW3dwECmtmC1nyarOI5Gv8PlBHG92oIJRRzzupmM66eV9caKKBnm5tf6xGwaT7RRRPND3eaVbAqOON6HHza/+M2agdB8bxiUZdR7NNDnIPB/eehyR0Oc9nNrf35EN5fArCKPAO2HAEeOaNL3nq82a5Gi3XMnNDUzHqelIFBZAXQvxNc38+l7+6l8uBPKfGx32AMYpGmo6lH68EuVFbs140OlwNTaGNenkQFmXI3WE20r0qH+eA3SjNa42qzYpozFwtTaF3VJUkIELdq50bUTP+YJQzK6IxblQCGpVY8dVzyEHaEIFcrj1vbo2P+4DfGRWdVeVqaFqNWosiQMD1PJiDDW2IAOQ9WfP4FAJGoSfH0ufNamgsXAkbmpRRHXV0o4LoRgXRjQrhQD/nLWBHQfkepAAAAABJRU5ErkJggg==" SearchSteps="Image" TargetType="ImageBased" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NCheckState.Target>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </uix:NCheckState>
+                                    </PickBranch.Trigger>
+                                    <Sequence sap:VirtualizedContainerService.HintSize="400,1432" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Pestaña Inicio CASVA abierta.&quot;]">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:LogMessage>
+                                      <Assign sap:VirtualizedContainerService.HintSize="358,70" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:Boolean">[abierta]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                      <uix:NClick ClickType="Single" ContinueOnError="True" DisplayName="Click 'chrome.exe CASVA_SEGURI…'" sap:VirtualizedContainerService.HintSize="358,166" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Timeout="5" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=a36bafe4-9c43-4c9c-86a7-5878f27dd857&amp;app=26" DesignTimeRectangle="419, 496, 146, 30" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe CASVA_SEGURI…'" Guid="9bb7367d-b538-44d6-8e40-5a0bd68078bf" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJIAAAAeCAYAAADHCUctAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJGSURBVHhe7ZbRjYMwDIaZDanToG6DOkwl1qCj8JiLUxwck7SlOHB3+h8+qaS2Yzs/Ds00TQ6AvUBIwAQICZgAIQETICRgAoQETICQgAkQEjABQgImQEjAhEOFNFwb1zSC65C128y9c82ld2OyPrr+8t0eOs/unrfbCsW1ivXbOExI4XDUoY639nsxPXrXrsQjyIrrPes8n4K0EICZkN7VfgLHCKlG4X8lpgBC2gtNhw8mT5hQfKXERg2uW10z87XFdmr6JHF432DTuU76zfbJ/q/yVHVEYdA676dihwkn/ov2l9a1tEbxSv7ZnFXt3u7zvtXjECFRoe1tXNZk42TTxCGxT+Ir30T5OzQ889tDBxn8w56t6x/Lum7uKk+NyrE0YRKBxVzEFRly6dyg/LL+uZx17Vv6VolzJ5IokJoUxcWotzU5tIKQKE4iBt5b2NB6PBS281Dzs3kyqg4ZQ+dP61qY0V7lUvIv5rynb5U49xtJNeTlNIgjfX6TKwipmCfDseZnjqEFyOt6j/iscin5F3Pe07dKHCMkDxUsmxXvcG4UNU0Uy81NG0U+r4WUa37wLx3K/Mys8xRXUiK0Z/60nk4edYVl7HUun/mLnHXtW/pWicOERIQi53FLtLfef0imDY3/qwNYfGRzaM03KHMwMQ6LonQo87MkiIn9PYsdv92E/wiOMdIcpc8Sy4ulIJCifzFnUbtf39a3OhwqJPB/gZCACRASMAFCAiZASMAECAmYACEBEyAkYAKEBEyAkIAJEBIwYHI/C9XYrmYTxZEAAAAASUVORK5CYII=" InformativeScreenshot="c371c58e5d673c36eef33eb68ec2735b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CASVA_SEGURIDAD_SL' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe CASVA_SEGURI…'" sap:VirtualizedContainerService.HintSize="358,166" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=8853376e-2478-4f01-9652-eb8d74bcbc7d&amp;app=26" DesignTimeRectangle="439, 501, 115, 19" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe CASVA_SEGURI…'" Guid="64cf9cc7-f97d-4001-b858-84bcf1c3b2f9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHMAAAATCAYAAACjtzK8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIDSURBVGhD7ZXRjYMwEERpCyndoHSC0glp5CTKyJXiA8wu6/EsIQn3Ecsf7wOzXsYztmkev49QKYMaZkHUMAuihlkQNcyC2A1zuDahaYDrQGs/4t7F3pc+jMm7MfSX97/L9Hd3XvsK0veMXmfihqlGGBPHW5uNvcVPH9q5TxYe4Ib8nFz/tjE+DeG0MI/6cBAe5skfyfjy/t8VppyIAydQT6ugwobQ2fGJuHhzdc7M9eQEZn1Fi9RawIynNwisT8O5+r31pBtoPWLXl4x3oQMfBuql52MODVPMaG9jHEMxYh6YYuclPXAH4rP0cZ7FyKWXamlD/8NPSaYfAd3eSctCXvSY61rD7MJg5rnzUfPN+OB4KVAfgddOJjQTURnzPDU9khj1JEzpq2FYPU4tCzPTL8D6bA+2pvaSbg6tT0KOvdl8rNP5JsyezGPghrO89s90wnRPwIK9Vtcd/M9huvoFJ0wJDccF+YZ+E0LCTeTV6TgJ0/eS+AjwMCd0Iauw5B8oJokpa3O7GJkfxcncY2F6gS29joRpxjf95nq015tZV3oCyXUK9V6Y+/N5mNt/FbxcoT4Cbpgz2LCZFos7Pq+Rdyb8lSgI303CMEzWV0I5GOaMBmqIdXaX23e55jju9IKQ2JpZ3aY59aGnXu75mLIbZuW7qGEWRA2zIGqYBVHDLIZH+AM96aA10q5yQwAAAABJRU5ErkJggg==" InformativeScreenshot="77cab224b57db98f93c1047ba1ec064c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CASVA_SEGURIDAD_SL' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NClick ClickType="Double" DisplayName="Click 'chrome.exe CASVA_SEGURI…'" sap:VirtualizedContainerService.HintSize="358,166" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=a36bafe4-9c43-4c9c-86a7-5878f27dd857&amp;app=26" DesignTimeRectangle="675, 318, 79, 18" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe CASVA_SEGURI…'" Guid="bce537ba-bd49-47d0-ac52-e75197c8b3c0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAASCAYAAAAaJIOvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG+SURBVFhH7ZdBboMwEEW5To9RJDa9RddWVr1JZeUAlbgEEtcgB+giS5YsunAZg4fxMINLIFIXjvQVGM84nudvkhTDMLisx6TCq79qMZ61KDvvgLLzDig774AQXtu0zn5aVTBOCzW1l8IVxSLTyHl7BfOeNddZQngAaOsF47RQkgd3oZA7Z6tzmj4N3s26srKuk8Z2SoX38voxX02vJLwTFyXp/8P7GSnN8vDIfQpedy2Z65gaE40jDIiTY16QxryTyRjmV6UrIQbzafU+zzgzOn+JTyeB5vl189qhdSbERmmbtoL39l6vFOCFb2D+DoJFlNcO71fS4NEcGvfNh2bI8fewjGtZnVhflM7eWJw6j60p9BD1suHUCF7f9yhwHr1/mvPma9z9eaf5ZshQ9XqeJ8HjdV7MzWGNkiJ49+87CuDR+xS85LNEgcehhzg2y+Icilb/V3ibpwWPuex0FR5XEt4oWAxtJDpuEdzpmQLx2GHseAr5Erx0vQzP5xAwYSNiqPDZCXjP/50XdhE0PshDM+zhTGuWuUZAChS1XoOH+RMQDyzUYn48p+ZOhJe1Xyq8/N82rey8A8rOe1iD+wXIJcbT0b1RNAAAAABJRU5ErkJggg==" InformativeScreenshot="5e09f9f5b6e06f2826448f00d8a998f9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CASVA_SEGURIDAD_SL' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target DesignTimeRectangle="674, 334, 82, 20" FriendlyName="'chrome.exe CASVA_SEGURI…'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFIAAAAUCAYAAAAeLWrqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFrSURBVFhH7ZdBboMwEEV9nR6jSNn0Fl2jrHKTysoBKnEJJK5BD9BFliy96GLKuNgZj40dpRZIaJCewhhPIp4+NlHGGBD+T1Zk99klx4UYSWQlJJGVkERWIhA59APoD70KXqfz1xjOCpS60/bLtb4FddIwsvlHIBCJsnIHXqfzU1iJZyp8BH0iMg9KVuTL62U5+zuKIr80NAdNXIlY5M9sbMGKJHVJ5HhtWBoZ7NG2890S4MbtnAYaHMPv4vVanxmgdWMzWz8BSZFv712EE+l2cv6J4A0219HXEVQknhPpvhfHVQsD7eF1oi/47R2ejEjkNE0eTCStayaSb0gWn0AigdXZvqXeYz2ORN6+bx4USeuSyGISmMhkeh8QmU39srkFKd6ArEhOUeRMdtemUmyC7jfr01wQudYXCsb1ckeRW79HWgluHhWcEzmT7GObTT619QlECs+TFSn/tR9HElkJSWQlJJGVkERWwcAvQTy1fzxfIJ0AAAAASUVORK5CYII=" SearchSteps="Image" TargetType="ImageBased" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe CASVA_SEGURI…'" sap:VirtualizedContainerService.HintSize="358,166" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=a36bafe4-9c43-4c9c-86a7-5878f27dd857&amp;app=26" DesignTimeRectangle="709, 352, 107, 16" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe CASVA_SEGURI…'" Guid="6df9ef98-962a-4662-a9f2-05854304e434" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGsAAAAQCAYAAAARWoEOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHySURBVFhH7VVBjsMgDMzbIvU1UX8T9TGV8o30KTmyGGoYG5OQ7rZSujmMNmvMeOwB2i3L4k4cA6dZB8Jp1oFgmjVdO9d1GcO9zHkL7oPrLqObrbV3Auu+SQPN9LdzLMwKRl0niM1uvHzIMBzUY3T9p4zba9AL2v7erE8OyMJp1iqEWfOtV7eqRMjhJ5JzQ7ODG/wNDPHUyOQGzvVIYikf6qRG0tDibU5cFAeeTf6E8lWgWv1thhwPNAu/Tf5Wbc9XCtZYhznDzV4Ms4pGEKIRaDwI7t34yHEqJvjwNFL+qlkqX2GTHyFq0UAGN1k5qO35XeVv0CY48dCIeJ5hSy+7bhYTpxgPwhCQhFknhfdZ+cyjBFMOcyW+Gr8AGOTzhX4G1tXfFn+DNjH8Zw7F6W91hlYtwK7frNVCSrwsyE9HHtoes/Qh2uRXoP1xUPn2C2Bd1UuE4m/QpjVi3Jwh/7/SizTLg8iszaGwaiQVNuKlMDjh4lDEt7rgVwPJPFlPlV+DuK70m5o1CmBd+G7RX9MmZ1Lp0YNrtPRSmEWgjfpa81o4SbzGphoC4p4okvN1UzHuh8j5RoPxhEkewjq/RqxXXce6pgbN36IN5+gNZRN93JxhQy+mWd8HGkTl1h0I328W3ZTKST0a/snN+g6cZh0Gi/sBzBldBa+d6k8AAAAASUVORK5CYII=" InformativeScreenshot="d0bfcfe045d74efdb62838844496009c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CASVA_SEGURIDAD_SL' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NClick ClickType="Double" DisplayName="Click 'chrome.exe CASVA_SEGURI…'" sap:VirtualizedContainerService.HintSize="358,166" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f86b05b0-7942-4862-8e10-2dff028f7b79" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=a36bafe4-9c43-4c9c-86a7-5878f27dd857&amp;app=26" DesignTimeRectangle="976, 350, 98, 21" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe CASVA_SEGURI…'" Guid="8706b137-edbc-4406-855e-f3b6251d2ad9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGIAAAAVCAYAAAC9gjt3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAITSURBVGhD7VfdjcMgDGasZJyKbaKski5TKavkkbPBJjaBI01zKifx8KngPwyfManZts11fB+diEbQiWgEnYhG0IloBJ2IRtCJaAQ7Ea/ZjcY4k8A+tYO3G2a3StlJrNPozGPJ6n7DOtk9t2GEnNas3Vv4YB9/AU3EmcTYrmZ/0K9uhkOcX8LmBDx5EGdhv9firHk/zgF3EHFHDMJ1InK623GNvFP4l0SAzg6hNYxwMFih6kZglZLeQLX61qH0u78ZrFtINsJ4fkC86EfrMWSMFKlOzp+ilcm4Ig+9D+uszwNyy/mSjc4Vi4TsCvvkAvK3mv2mfFutvBF4aGFB7ssrJKqJID0vwK3jmejZn98Jv17YkPfDA+ANMeIaQlbSlWzTPHP78PlSHjlfsjnkqtbE+OL2Rh2ehyg+Hieo34hUzvP0V/rk7M7KeV6SlXRyDmOLFc8FhfKSfUZ+yRfH7BOBxIQC8B8Z0wI+FCNB20SkVSZR9OcbSdVbW0/JP/DFcaHag89Cre3qjci1FpUE6a+0JrleYf3yV1O48rEPx9aWyOHT1+db3QfaF3xLuSp5eg6s43zZhscalTcCHjUMLHQjsHpIAg8Fkgg+1EuVXj5iu2zfRGYuoP5HcHwvxwoj2WN/Y6R9fJQxFq7B8tw+Sr7FXKHK/b74DRDnoB5rEbP6WHd8FZ2IRtCJaASdiEbQiWgCm/sBBmuld5YPnBwAAAAASUVORK5CYII=" InformativeScreenshot="dd448f36c72e70e4cd08aa89df22a634.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CASVA_SEGURIDAD_SL' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="358,101" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Navegación completada.&quot;]" />
+                                    </Sequence>
+                                  </PickBranch>
+                                </Pick>
+                              </Sequence>
+                            </uix:NCheckState.IfNotExists>
+                            <uix:NCheckState.Target>
+                              <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=8853376e-2478-4f01-9652-eb8d74bcbc7d&amp;app=26" DesignTimeRectangle="261, 347, 91, 17" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe CASVA_SEGURI…'" Guid="508279d2-09cf-4bd3-9047-cff792388d09" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFsAAAARCAYAAACy9dCTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGqSURBVFhH7ZVNcsIwDIVZ9hochytwD27AObLjJMxwhG67YMGSZZau5B/52bGM01J3MmPNvIEoivL8WZjd59fDDPXR7vGxN0N9NGB31IDdUSnsw8VwzCfIbUjPq/d+uhlzvxRr/lMp7Olh5omAX89J0VYksAv3fiwewDdtHMA+mvl+M0/5TAu3oO3A5qZhonnC0TRdS+DUt+TF6NnMPsXxun+lHsSAMWwdHiP2u+8P65NAkAsfPHj+OtSt8sr5OLgRNjWRItzN7Pyzi5uO9XwOnvPhk3Mt/bV6VPKsA1OEDQtW/Wk+3uWV5GGzUYJ9CDfitTSEh1jVfB68OLtoFziliz4BhlKfCBdJ4l5F2DmgPOh92noQ3q+8khxsblgKaqyZWJuPCj9NN23qApT6mHfP5hvXBHuN7xbY4brileVgZxNiFV6ima3l8WXcezE5cJYpfdR6VPKsOzdfwdb8aT6SY0GpafJKIth8E4+QILdL1jwbCoE72ZIXcw6GhJjT+lTqQXahNqiHdmYDIKuivyy/8OEBrvLK+Qg+/kEO/bkG7I4asDtqwO6mvfkG1XjQPy6can4AAAAASUVORK5CYII=" InformativeScreenshot="0f63d2a5a271d8e7aebbc8bf57a0adc8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CASVA_SEGURIDAD_SL' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="270, 281, 74, 15" FriendlyName="'chrome.exe CASVA_SEGURI…'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEoAAAAPCAYAAABDRVmuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFSSURBVFhH7VUxksIwDLzyvsFz+AL/4Ae8g46XMJOPUKSkTKmzN1EsCTnW3dwECmtmC1nyarOI5Gv8PlBHG92oIJRRzzupmM66eV9caKKBnm5tf6xGwaT7RRRPND3eaVbAqOON6HHza/+M2agdB8bxiUZdR7NNDnIPB/eehyR0Oc9nNrf35EN5fArCKPAO2HAEeOaNL3nq82a5Gi3XMnNDUzHqelIFBZAXQvxNc38+l7+6l8uBPKfGx32AMYpGmo6lH68EuVFbs140OlwNTaGNenkQFmXI3WE20r0qH+eA3SjNa42qzYpozFwtTaF3VJUkIELdq50bUTP+YJQzK6IxblQCGpVY8dVzyEHaEIFcrj1vbo2P+4DfGRWdVeVqaFqNWosiQMD1PJiDDW2IAOQ9WfP4FAJGoSfH0ufNamgsXAkbmpRRHXV0o4LoRgXRjQrhQD/nLWBHQfkepAAAAABJRU5ErkJggg==" SearchSteps="Image" TargetType="ImageBased" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NCheckState.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NCheckState>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:RetryScope.ActivityBody>
+                    <ui:RetryScope.Condition>
+                      <ActivityFunc x:TypeArguments="x:Boolean">
+                        <ui:CheckTrue ErrorMessage="{x:Null}" DisplayName="Check True" Expression="[abierta]" sap:VirtualizedContainerService.HintSize="334,97" sap2010:WorkflowViewState.IdRef="CheckTrue_1" />
+                      </ActivityFunc>
+                    </ui:RetryScope.Condition>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:RetryScope>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAmXSURBVEhLjVZpbFzVFb5vGSelpSACpGUJSbyMPcubzU5LqijQFCUxtAkk2E6ALMROiigQqEJQoa0qEFRJFREoUdhUaEEglRYJuoRNJSo0LCWJCjbxeOzxrG/G4/F4Zt5y1/d6npO00F+1zo9n+937vXPO933nIEYJxoK4glSqRK+Q6RlanoZgEFPTRNdJoWDPTDNGmw6jghHX5fDDHMIorupYz9FyhZSn6FzgUhUXK6Res1zRcCghBjIpM816+dfP51duysWuTXevyyU2QuQTGwuJjZmevk8SN3z68CHHEU1XUMYFFwBjOS5nfPi+fcnoD7KJDbluL/LdGzLdGybi6yavvnn6uT8anDJbIOKIyqHnsy1aAwVm1XaMOgkKnQ7qRXgS+TOHnnNd13YE444QgglmuC6Dg/fuayI/Q0F25uUQRl0N1W+grtTXY5XX/0ocB3FsZ64fMpCfy8uw2uNICS7HIZgXMSFrZcmfe+Z3AOAIuBQAHIcLIuCBjfXfNou6uBQVchwCTgkp1vxKoinHmqgtP3gPdynihjV93U0mWsIUeCnGlIiAA96ZGJdiVNF0qSs99DO4VkD1PRSHemm4ZGwydekKCwW5FKFKDI5wOUqkUNkXLVz+3cn5iydu3AEVRdy2Kr23MNQG3wvv0bMAHAAUSCLCFS1/7vLyEy+yaoVzm7uEudxx3fo7x8otMSJptqJZvgiVI1gKT166ovTMy9bIROWV1z7b/xgnDDmmWerdRqFEElyXYLJ3u4OiTIlZKoRmz9emW7T0OYl8oj8zcG9x90P6gccbI8PmqdGRC3vqLRGiJLAaEWqiJof1fY87rsMZA5aZRo1hAgCGvnYrRR1CilM5QdQoJOFIEfh2rASJEmBygClhAG6gUBNpTRQso8Vj3avxRDZ1050NtIQo0YZPs6VYceEKfPKE4zDCmhbHTU5t+gUACg2QocMxqkYgIAmOwkQOUyVO5/U4SkKgOFYT9ZYoUYMzaHFy54N4JPl564o69FkJmSiQXbjcGj3FXJfA1UA14gkBOZah925jXgYxoSRsJQqlrKJQ+pxYecGKGTlhoBCUiypRosAXxKgUpVIEy+Hsed1kNDX15rtj/mvzwMsrri799DFSyoG4MGDYVkMvmJwCgFno3Q49ABZBHQxJG1/4nal7Hq4cecv8+JPpwy8kr1wPGEZL1G6JcDlCZM1Wo7gl9vn8K/Iv/97Tx+h46YVXSwefyex+KHllf75vd+1Xz+UH9w7v/gnjBAnTyvXeCiUCtsDtE5evqr3+FvAETgIvvfNjkxOt12FZI4pG5BhRIqYUMFHXyDnx2fc+xKBo180+9WL6a9AeiICFQLNtVXR5YWAIuI3cplXs3UEAQI1UpED2wJPC4ZhhoDp1QeweSnnf4SpahJHfQv6SrGUu7MlcPVDe/5QxPFobTVLMUkN7s+iyOuhGBQF1CzlsoLbC5p1wFjlNS+8dtFAHVsLF83qMD47Dx8O9tgPw4GgMO7Rx8h+fdiwvLL4qtX5X/rFnZ15+derRw5P9t41csvL4xVeWj7xnj43ln3g6uf6Hlfkag17KmoXai5t3glwQNyGDQbAKomqZhd/GJ0+BWKlwLUiBOw52uC0wIXa6aIxlG298kN2zPxtYp8uhBup0UOfU+eHGh8fhIhA5rU1ne7fYKOLIYYza9U1zAMKwplbvwB6LIrkFifpHxx0HAAT4AXgOdSjmtiFo89iJz2/YNX5BfAa1WqiTqSFQiSUHch2rqF6Cl2vghMwt3PFIE4WFErZRm366RK5pVdZss70eJGaljslHDjqCYiAw49ADECR2bJgFyb4fVdAi4usyWwKWGqRyF5NBJdH8BfHZN45Ao6DV9Q+GM23XMQRsBlm0Qg/mMjDNypqtNmqnchycK7Xoqtqb74g5bkDAG6cf6keOJiPrZ1CYSwkMsgC+SmEotyXHi0vW1O8+UN6zb7z1e6YU4jKoEnpwtskewOqtUDJPyVK0jsLZb64oPrDfePc9+8OTxrvHjD8dbRw5RsfTVm4iNfiLlBygKCJ8cdOnUTnM1XAD+afVTl1qa0gBILGQuoUUhiZ/CQBoKsCIlIjRosGoAZrPfLU7d/G3xi6Kjp0bmpwXnWi7pvjzA3Z6snDwibGLlpVRJ0bBOgoWUUBHfhN1OGCLLXEwPiEtA5p+GWANALTPzZkoVsNCCllq2JYjAjxVjthQCh8oPDCFOj6LrK69fdT8+J8T2/aeWroms/Gu4sHny4deKvTfU5wPpYtiH2QAUwtK1PG/AOCm4HRAVgeFbV8UCg3uBH8B/+FyApTsyjGMQpMLlheffkEY9UahxJvgOl6fBCXpPftLUoj4NCFBEgDg/y/A1FoPAIblmXlweiScmWswGCCtqOED947YcrghB4cvW2mkUnA3htHvwBbgyd1OprNLV1Mp6AKArJn/AeAA4GXQMQcQh+vgXhdFXQ/DczdvPMgaVyIwVZpqEEuBYnwDK+sgQw9AuHMPglGzuG4X7Axwz5yS/YVNZwCMyuotXwCAaTP3+ZCHD0b0mSS4EnW85/AMak/13U6xQZnjGRao3XGo6zBjNnPNLQR1eiX6fwDAlmelrmnkr4PHyfDt0SklmJG7ktr3q28fhfXL0wfnDqxKsGa4rvn+ifHze7ACOkjMNfksAPSgvAYMpM2GeaDEbVWDsjTBly5antswNH3nL3Obb093rR1dvDI5cGv56ZeMY+/rv3ll4r6Dlb/8nVMCHYbAM7Xx6388i6KN+cAOb1Woo6X6zbtgBQEAq7p2AJRtqMDfHhsUpARzFy5rvnYUvILCeebiYtUuFMxMWn/w2WSwV1dBAYHkeT3pwfsrv/1D8dEnR1b1leUgVUPGvBAsD0Tprsit+k3bITnYTe3Mpl0GCA15ixdT4zVJSw3cQV3YRGEeNCj3uNgYSf4rek1F7iBQPSVCfZohw2QGoWlVpNmoy1sM1BDQAZTsSD015M/ffT8smQiMsPrnN0YWwJ9am6jVRouq6JLU9j1eiQXDnJpCmI45ccfeMvpGU+owUTsYF0FLsBetMAqhsSbqhKLPTaQ2eAAiJJdeNXviEygAEhjsHs+8/bf00F36jVv1gS16/7axB/aBn0LvKIftW1jNyvD992X6tuQ379L7h/SBnfmBwfzAUKF/UO/bUeq7tdS/Qx/YUdy0Td+8XR+4JX/n3tpHH8FCjm2KGgw+1LUFEMIL5rm09y/CQEGwg9omww34hQjYQmBMgIfDwDgbjkchb9Wa2yldb2/1XhLU8NTNbYL/DZvcT/ZMg6+uAAAAAElFTkSuQmCC" InformativeScreenshot="385dea36e80e29916a556b5eeb73d845.jpg" Selector="&lt;html app='chrome.exe' title='*' url='*basic-02.freefy.cloud*' /&gt;" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="564,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Rethrow sap:VirtualizedContainerService.HintSize="334,32" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+      <TryCatch.Finally>
+        <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="334,101" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;--- End Navegación eSatellite ---&quot;]" />
+      </TryCatch.Finally>
+    </TryCatch>
+  </Sequence>
+</Activity>
