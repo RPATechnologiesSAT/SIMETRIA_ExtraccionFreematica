@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1232,3583</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1768,2950</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Rellenar_Cuadrante_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="44">
@@ -113,7 +113,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Rellenar_Cuadrante" sap:VirtualizedContainerService.HintSize="1242,3518" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Rellenar_Cuadrante" sap:VirtualizedContainerService.HintSize="1262,2885" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Default="False" Name="generado" />
     </Sequence.Variables>
@@ -122,45 +122,45 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1200,3428" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1200,2774" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1162,3191" sap2010:WorkflowViewState.IdRef="Sequence_20">
+        <Sequence sap:VirtualizedContainerService.HintSize="1116,2546" sap2010:WorkflowViewState.IdRef="Sequence_20">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="1120,101" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;--- Init Rellenar Cuadrante ---&quot;]" />
-          <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="1120,2960" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="5">
+          <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="1054,92" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;--- Init Rellenar Cuadrante ---&quot;]" />
+          <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="1054,2303" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="5">
             <ui:RetryScope.ActivityBody>
               <ActivityAction>
-                <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="1078,2694" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="1012,2046" sap2010:WorkflowViewState.IdRef="Sequence_33">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: CASVA_SEGURIDAD_SL" sap:VirtualizedContainerService.HintSize="1036,2604" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V2">
+                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: CASVA_SEGURIDAD_SL" sap:VirtualizedContainerService.HintSize="950,1935" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V2">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1002,2378" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="916,1678" sap2010:WorkflowViewState.IdRef="Sequence_2">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence DisplayName="Rellenar Info Cuadrante" sap:VirtualizedContainerService.HintSize="960,886" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                          <Sequence DisplayName="Rellenar Info Cuadrante" sap:VirtualizedContainerService.HintSize="854,823" sap2010:WorkflowViewState.IdRef="Sequence_11">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="400,101" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Rellenando información cuadrante...&quot;]" />
-                            <Sequence DisplayName="Empresa" sap:VirtualizedContainerService.HintSize="400,90" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="400,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Rellenando información cuadrante...&quot;]" />
+                            <Sequence DisplayName="Empresa" sap:VirtualizedContainerService.HintSize="400,81" sap2010:WorkflowViewState.IdRef="Sequence_6">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -195,7 +195,7 @@
                                 </uix:NTypeInto.Target>
                               </uix:NTypeInto>
                             </Sequence>
-                            <Sequence DisplayName="Delegación" sap:VirtualizedContainerService.HintSize="400,90" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <Sequence DisplayName="Delegación" sap:VirtualizedContainerService.HintSize="400,81" sap2010:WorkflowViewState.IdRef="Sequence_7">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -242,7 +242,7 @@
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NTypeInto>
                             </Sequence>
-                            <Sequence DisplayName="Calendario" sap:VirtualizedContainerService.HintSize="400,90" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <Sequence DisplayName="Calendario" sap:VirtualizedContainerService.HintSize="400,81" sap2010:WorkflowViewState.IdRef="Sequence_8">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -374,7 +374,7 @@
                                 </uix:NTypeInto.Target>
                               </uix:NTypeInto>
                             </Sequence>
-                            <Sequence DisplayName="Mes" sap:VirtualizedContainerService.HintSize="400,90" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                            <Sequence DisplayName="Mes" sap:VirtualizedContainerService.HintSize="400,81" sap2010:WorkflowViewState.IdRef="Sequence_9">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -500,16 +500,22 @@
                                 </uix:NTypeInto.Target>
                               </uix:NTypeInto>
                             </Sequence>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="400,101" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Información rellenada. Ejecutando Informe.&quot;]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="400,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Información rellenada. Ejecutando Informe.&quot;]" />
                           </Sequence>
-                          <uix:NClick ClickType="Single" DisplayName="Ejecutar Informe" sap:VirtualizedContainerService.HintSize="960,166" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
+                          <uix:NClick ClickType="Single" DisplayName="Ejecutar Informe" sap:VirtualizedContainerService.HintSize="854,52" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=1c375922-fd89-4d67-9514-354c2c0f15d0&amp;app=26" DesignTimeRectangle="1259, 849, 140, 27" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe CASVA_SEGURI…'" Guid="e2636553-90a8-4cd8-b445-7434e3ef1558" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIwAAAAbCAYAAACuo2fFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFJSURBVGhD7dbBbYMwGEBh1kLKNhYDVFkBsYlZpBJj0CFy4OhCwBSM7fCnRAnwDp+UxMY58GQ7aW6NAdYiGIjcg7l+XYGoRTD1Tw14EQxECAYiBAMRgoHIgYLRRiWJSXwybepS9Z8vuam8z2ONAwajjPaOv9h3btITBEkwWyGYvXkQjOdIqoq0/82KjXXH2nSd4bvOJnNiurXts5Zdc0cOGMySKttxNxjnxdtA0qJazLVRzMacYFQR3mHGOZkN5k274AZOu8MEd4Y2hFkgoXUeBONbfwzGE9VenD4YXxT/DUbb48ydQzCfRHiHsd+H+eOdpXvJsbhml9u/Y9AXTB9cZfLLMIdgPkn4DnN/QW4wracuvZMAplQZ+f8BweyJc5TgOecIZjx+AvcSrHaeHQabIBiIEAxECAYiBAMRbzBAzCwYYC2CgUBjfgFOiYZKehJRmwAAAABJRU5ErkJggg==" InformativeScreenshot="baf918a4377a113e1c00b0e9df9c0f5f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CASVA_SEGURIDAD_SL' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
                             </uix:NClick.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
                           </uix:NClick>
-                          <uix:NCheckState DisplayName="Pop-Up Ventana Tipo Cuadrante" sap:VirtualizedContainerService.HintSize="960,1154" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Timeout="5" Version="V3">
+                          <uix:NCheckState DisplayName="Pop-Up Ventana Tipo Cuadrante" sap:VirtualizedContainerService.HintSize="854,608" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Timeout="10" Version="V3">
                             <uix:NCheckState.IfExists>
-                              <Sequence DisplayName="Seleccionar Cuadrante Mes Diario" sap:VirtualizedContainerService.HintSize="506,928" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                              <Sequence DisplayName="Seleccionar Cuadrante Mes Diario" sap:VirtualizedContainerService.HintSize="400,391" sap2010:WorkflowViewState.IdRef="Sequence_12">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:Boolean" Default="False" Name="encontrado" />
                                 </Sequence.Variables>
@@ -519,25 +525,25 @@
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="444,101" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Seleccionando tipo de informe...&quot;]" />
-                                <ui:RetryScope DisplayName="Retry Scope: Opción Cuadrante Mes Diario" sap:VirtualizedContainerService.HintSize="444,61" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3">
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Seleccionando tipo de informe...&quot;]" />
+                                <ui:RetryScope DisplayName="Retry Scope: Opción Cuadrante Mes Diario" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3">
                                   <ui:RetryScope.ActivityBody>
                                     <ActivityAction>
-                                      <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="994,1064" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                      <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="916,1058" sap2010:WorkflowViewState.IdRef="Sequence_14">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <uix:NCheckState DisplayName="Check App State 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="952,974" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Timeout="5" Version="V3">
+                                        <uix:NCheckState DisplayName="Check App State 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="952,920" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Timeout="5" Version="V3">
                                           <uix:NCheckState.IfExists>
-                                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,748" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,703" sap2010:WorkflowViewState.IdRef="Sequence_15">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <Assign sap:VirtualizedContainerService.HintSize="338,71" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                              <Assign sap:VirtualizedContainerService.HintSize="338,62" sap2010:WorkflowViewState.IdRef="Assign_1">
                                                 <Assign.To>
                                                   <OutArgument x:TypeArguments="x:Boolean">[encontrado]</OutArgument>
                                                 </Assign.To>
@@ -545,35 +551,35 @@
                                                   <InArgument x:TypeArguments="x:Boolean">True</InArgument>
                                                 </Assign.Value>
                                               </Assign>
-                                              <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
+                                              <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
                                                 <uix:NClick.Target>
                                                   <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=e3b3c93a-705e-4d4d-b514-fff05afa56ec&amp;app=26" DesignTimeRectangle="817, 699, 109, 18" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="24562430-b4f9-4eb3-ae77-69d29e20a3d4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAASCAYAAABRjFBCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJiSURBVFhH7VeNzaswDGSsMg/qQhWr0GUqsUqeL9jpOSQtBT7pIeUqpMTEF//FpF1ouBxa0i6IlrQLoiXtglglbX4Moe+60OG59WF4zvrmAF5j6G9jOIHpN2Bf+HGfVADMYbzBt4P2GHd6TorVBrikzY8+OjO9VPCawiDGjDbfizOStocj6vRez4J9tj0SKxRD/xDJL7bu8MslbRQHDyeohB2GrbCHQ3XGO/n1lE5yl+cv7DnDzw1wSatumBvDcwTBtYi4Iq4Z0IZEjmqPlR31hjBIELtuCFNJV9cg0Nx2YkvD3PYl/g7rS8VmdmIfnADBhAQ+yf4KT+w6tr/qOhi3ThegM4lf/O6Dj0scsG/ZFm7qjONJYyT5EmTr8QhaSpoYPpZ6v+nqmvR9gNMmT3uCn06Pe0dgzvhegurmNR4NvslszEhrGcrHRcEwncipcUg8WcxQNO5b/MbxpMl4wEmyajKjSusL8l26GJtOeij4hqSDgOjJRiCYs8izBDBexB6TrFM+BtuTUDhpMv7oo41zvnxO2PZNqxLqRcVOxTcDnPyALsal6s9BOqhctOl3e1LOTzy4XFgrV1EC22Ng3vhug48lGZDPCS5p9dvjUkGp31vLikbxd0DboPxWRx1yZ0hFt2a8kyu/fWtqDrIcYwt+ktd4zG8IscbGhHxPvT26otjiY27Lr+0RcP/TxHBHYjK6ffH6dOGAAowxuVRrXJ85WtTN1nAA4FSqehRSnMvz7SKi0wSWV3icbbWLiL5fHvoOE/9XH7Px2xaVFbBKWsP/j5a0C6Il7YJoSbsgWtIuhxD+AacckzLOcH3UAAAAAElFTkSuQmCC" InformativeScreenshot="5b53ef3c74dfa15f1e4bc5b463a54a8d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
                                                 </uix:NClick.Target>
                                               </uix:NClick>
-                                              <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
+                                              <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
                                                 <uix:NClick.Target>
                                                   <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=e3b3c93a-705e-4d4d-b514-fff05afa56ec&amp;app=26" DesignTimeRectangle="1246, 460, 78, 28" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="4c7e3278-6d74-4363-b4e1-f092a03422ed" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE4AAAAcCAYAAADP7InhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFoSURBVGhD7ZTRjcMgDEBZC6nboA5w6gpRNkkXqZQxekPcRz59sRvAIJLrOSkqlT+eGowp8osdM/1MoPwfFSckEXf5uih/sCru/n1XVlBxQlScEBUnRMUJUXFC6om7dWCNAXct7DVINXFjb8H1s7zzUNzfBb6UUwdjae9FVBI3QndyMITfUs4OPlYcFrZ0GnUeG1dcm3mECdaNSdxLubr52dLIxzi+DLbGHL8fcrKzB3R9FXGJLN4dVMzyPDOcDdh+fMQziSFuLHS3LH+j4zCH7qazx3V7BXHYEbFYvg6FZ2cwnnSN75JMdBCcicvPB3ErciW8XhwWxYrwoLAtcaX4M+JoxFm34n81KS6MGY/7QrNigjCMs7EKMtbyM3Hxvsf3r0FxAzj2TYrEgkiK70TWKUncF0xCl1iSj/dgDGX750ibo3okBxe/BxUnpC1xb4SKE6LihKg4ISpOyKY4ZZuiOOV5VJyICX4BYoBAwfsyH58AAAAASUVORK5CYII=" InformativeScreenshot="27ea8e99448278b7acfc22b7f727048b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
                                                 </uix:NClick.Target>
                                               </uix:NClick>
-                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Preparando informe...&quot;]" />
+                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Preparando informe...&quot;]" />
                                             </Sequence>
                                           </uix:NCheckState.IfExists>
                                           <uix:NCheckState.IfNotExists>
-                                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,185" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,167" sap2010:WorkflowViewState.IdRef="Sequence_16">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[encontrado = False]" DisplayName="While" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1" MaxIterations="3">
+                                              <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[encontrado = False]" DisplayName="While" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1" MaxIterations="3">
                                                 <ui:InterruptibleWhile.Body>
-                                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,256" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,268" sap2010:WorkflowViewState.IdRef="Sequence_17">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="358,166" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
+                                                    <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
                                                       <uix:NClick.Target>
                                                         <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=e3b3c93a-705e-4d4d-b514-fff05afa56ec&amp;app=26" DesignTimeRectangle="1223, 708, 18, 19" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="98c5fc84-9377-4061-914d-d3759929d5b6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAATCAYAAACdkl3yAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABZSURBVDhP7cxBCsAgDETRXrl4Pr1aygQtKpoRZuuHiATynlyyKbV7h9T5IaUL8UIovan+xlZ7Cs1Hqx0KIdQf7hBEIdSAHYKOIBQh6BhiXYg3QOo45K+c2QcMDQkWD+hPDgAAAABJRU5ErkJggg==" InformativeScreenshot="9ffacf9e193d7337aa109522279a51fb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
                                                       </uix:NClick.Target>
@@ -614,16 +620,16 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:RetryScope>
-                                <uix:NCheckState DisplayName="Informe generado?" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="444,562" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Timeout="30" Version="V3">
+                                <uix:NCheckState DisplayName="Informe generado?" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Timeout="30" Version="V3">
                                   <uix:NCheckState.IfExists>
-                                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,336" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,309" sap2010:WorkflowViewState.IdRef="Sequence_21">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Informe generado.&quot;]" />
-                                      <Assign sap:VirtualizedContainerService.HintSize="338,71" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Informe generado.&quot;]" />
+                                      <Assign sap:VirtualizedContainerService.HintSize="338,62" sap2010:WorkflowViewState.IdRef="Assign_2">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:Boolean">[generado]</OutArgument>
                                         </Assign.To>
@@ -648,7 +654,7 @@
                                   </uix:NCheckState.Target>
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
@@ -656,22 +662,22 @@
                               </Sequence>
                             </uix:NCheckState.IfExists>
                             <uix:NCheckState.IfNotExists>
-                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,326" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,299" sap2010:WorkflowViewState.IdRef="Sequence_13">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;No se encuentra la ventana de tipo de cuadrante 'Cuadrante Mes Diario'. Buscando ventan de validación de datos...&quot;]" />
-                                <uix:NCheckState DisplayName="Existe ventan de Validación?" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="NCheckState_8" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;No se encuentra la ventana de tipo de cuadrante 'Cuadrante Mes Diario'. Buscando ventan de validación de datos...&quot;]" />
+                                <uix:NCheckState DisplayName="Existe ventan de Validación?" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NCheckState_8" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
                                   <uix:NCheckState.IfExists>
-                                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,290" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,272" sap2010:WorkflowViewState.IdRef="Sequence_31">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
+                                      <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
                                         <uix:NClick.Target>
                                           <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=56b806b9-1560-45f3-81e0-1fa0563fa7de&amp;app=26" DesignTimeRectangle="1366, 355, 76, 25" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="e4aebadc-26ba-4319-8ccf-ad1e8ec9e456" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAZCAYAAACb1MhvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFgSURBVFhH7ZTdjYMwDICzFlK3iTrErYCYpBJr0A1ugXvoAPfAow+nxHGswGHxo8vJD59KHAfqDxs3fo9gbIeEuY9P4xdMmJKisNfXyxCYMCUmTIkJU3KNsGcHjXPgH4W9yrhE2NA24NtJ2r0v7u8CX8atg6G0dwIXCBugu3no6beUs4N/JwwLmjsrdBobS1y7aVQDrPuyeJTx8NN1E0Y7xfElsDXmxH3KEWd3dvnpwjJJvBtCEfP1RH930LTDOy7kUdw10D1F/kqHYU54djh7THefLAw7IBXJ11SwOIPxrEtiVwjBJFYIk+dJ2IJULecKw2LYn4+gqDVhpfgWYWGUWXfivaoSRuPE47FAUQSJwjgbH5KwlC+Epee9v28VCevBs29OIhUSZMTOY52RxWOhQeQcy/LxORhDyfE6UddIHsmBRe/BhCmpR9gfwYQpMWFKTJiSVWHGMiZMSSbM2MIIP32/gUS+FmUzAAAAAElFTkSuQmCC" InformativeScreenshot="d702250611efe8c576271f4fbd60a08f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
                                         </uix:NClick.Target>
@@ -679,13 +685,64 @@
                                     </Sequence>
                                   </uix:NCheckState.IfExists>
                                   <uix:NCheckState.IfNotExists>
-                                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,221" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="916,797" sap2010:WorkflowViewState.IdRef="Sequence_32">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Throw Exception="[new Exception(&quot;No se encuentra la ventana de tipo de cuadrante 'Cuadrante Mes Diario'.&quot;)]" sap:VirtualizedContainerService.HintSize="338,97" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                                      <uix:NCheckState DisplayName="Check App State 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="854,686" sap2010:WorkflowViewState.IdRef="NCheckState_9" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
+                                        <uix:NCheckState.IfExists>
+                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,469" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=a8f1d477-8edd-4e8f-8347-8b7f1ecdb594&amp;app=26" DesignTimeRectangle="1247, 406, 50, 17" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="49aed48c-d83f-4875-b59a-8bc93e4210ee" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADIAAAARCAYAAACfB/8pAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEZSURBVEhL7ZTtCYQwDIa7VuG2KS4jnUToGnWQ++EYuSaQmrQVP/AOT/zxgr6NSR4TNdN7gjvoAbma7g0SOgPGzHJDHfMVDQ7My0Nsna2oAiGILggvgn/9COY0kNGDPZjoFJ0FEntbTKMQFhIrl4tSAw5cmpzykygnx4vcyld5xDWfVzEWLHoiXwVi+5jv14RrSCtHRS34seELKPQpP/oFVPZFvJSu5SAU5/smkkTfkHhTSw2jnxsXz7dykLBuI4+MadVi7fpGSlBu+AhIc/Iiz9ZaLA2ShA/oqcx/Lb164m+2ANLy8wqJ9chNFyBbarEqEBTBlCOlswBO+PlsCSRdU5McL16Q8vlZlWdbLVYT5B/1gFxNNwGZ4AOOLRb9gVPs2AAAAABJRU5ErkJggg==" InformativeScreenshot="6a2fdee8e726c359ba38b3dec6c62238.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                      <uix:Target DesignTimeRectangle="1248, 375, 52, 17" FriendlyName="'chrome.exe eSatellite'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAARCAYAAACSGY9uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEsSURBVEhL7ZOxEYMwDEW9Gl6Ho2KNVNSsQEvHCrR0tBkgAyhIYFnWGUMCl+NyFP9if8tIT1bM8wXwT7qBrq5toKEGawzkbeTsgtoE6isLeTVBFV30/JCwWVkNfezsS20AjfDISmj4NxZzQD8HwoTLy9BLibHDvZlGkSReL/BdsW05rS2NrvexSWKPMe6cY9TdHVOSBAogZDcpybKe1BQGbDXOvoJj31h4DCo+8UIYQ7np7v7pSABhB30Rcs8FqTvoB112XVUNYHAFpO8z0Ap0TOtAmEx83AlBUkAxfw8Qjap4XfzWqUA8LtJ3BagkDIK+GA8uci1eAfl88//rRKAOcjHzXj4RFeteTnQ28F0hBLp4QTzmQQ+b4NZe547cmfqwqCO6ga6uG+jaAngD9+Av+Nx0MtYAAAAASUVORK5CYII=" SearchSteps="Image" TargetType="ImageBased" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=a8f1d477-8edd-4e8f-8347-8b7f1ecdb594&amp;app=26" DesignTimeRectangle="1059, 557, 81, 28" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="adce2652-6735-4250-981e-448ae30930e8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFEAAAAcCAYAAAAZSVOEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFySURBVGhD7ZbNcYMwEEZVklUO6iTD0IxnqMQzlJAGcnABPnDcaCUU/azAg7XBYbKHd9CnRViPFVjNjxmENkQiAyKRAZHIAJGoPj6FJxBnJKhcJOQQZyRYCu9fd6FAJDIgEhkQiQyIRAbeI/HWg1Ya+ltlrpkRzK+tXectEqdBg+kM6GGqzrfxLyRO0F8MjLjZSw9TNocCFCikG59kVtRgfG4x16LW4h8S3q/M4hqm06DI79jH8RLxKC8yxi5s3oPjKCpmvgZlhA5bZIXaK8rEBxPm1joR59K6VOrrHC4xE4ebL7sr2/wiKyF2XFqbjivrOMlhjY26FzlYIpWy3UFrGy3zdFzMocCf47pR18CxErPO8+THtTxetQxBATHHD1VdlCW9p+vIk0ss34GOTKyX4zo0ZO7vUL1r3UfB5bkM9261uZecrmkScSeVyAefAA5EIgMnlfi3EIkM7JYorEOckaBykZBDnJWBsB+RyIBIbGaGb+zJQdAig663AAAAAElFTkSuQmCC" InformativeScreenshot="0ca7de016937e298b7360490b6c4f2d9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                      <uix:Target DesignTimeRectangle="1022, 500, 104, 22" FriendlyName="'chrome.exe eSatellite'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAAWCAYAAAAsNNkQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHTSURBVGhD7ZZrjsMgDIRzrM15olyoylXay1TqVbwYx2SgPKK0lfzDn5RVsGFiGKA7kWMaN8g4bpBx3CDjuEHGcYOM4wYZxw0yTmHQnZZpoik9M23PPWWQ+yp1zrcXt0LtS/h7FR6v8/1US0HNa1QMAsHHEhbgG4X+gs8nn/NtPebXBsU2GyTxZZ1p+tuI96vkWicNcqvaW4sRvW5BM8ZxI/S0GcxPtDw0pn339xtvMOkjp4x50fZ3jD3ilfHh/ahvf2LtLQ0GalsX0GQgl8XbdA2KxUVDRBgL4esltfmkJeMkhyYwHJOF5MnhQryf0J72QV5r3pZ6Uw3NmwC/X45HbQb7Inn8rXbQOTevnMFvUK14ptcuc0ypi2aFdmbm6FtKr99AIy6c1lIbU44PkbTBdoYaTE/z/Rs1BlecMhLHdk2jpSvINXJ2Myi9fp1ctnNbY4rxPAY30SkN5myuzUWDQqR5XOVUpFykFkPw2utpI70Jd3K42PxeHVO+F1dbU6OYZ5YLSs15Vb6xc9kgiZVHXIGcTuS50Zz642kp+kV62kpZE7ZHOf0m/ojXx/OiSh37Exe1pRHAeZ7+J4HjpwxyrOEGGccNMo4bZBw3yDhukGmI/gEhcQ8hsmHp3gAAAABJRU5ErkJggg==" SearchSteps="Image" TargetType="ImageBased" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                          </Sequence>
+                                        </uix:NCheckState.IfExists>
+                                        <uix:NCheckState.IfNotExists>
+                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,203" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Throw Exception="[new Exception(&quot;No se encuentra la ventana de tipo de cuadrante 'Cuadrante Mes Diario'.&quot;)]" sap:VirtualizedContainerService.HintSize="338,90" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                                          </Sequence>
+                                        </uix:NCheckState.IfNotExists>
+                                        <uix:NCheckState.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=a8f1d477-8edd-4e8f-8347-8b7f1ecdb594&amp;app=26" DesignTimeRectangle="1300, 347, 14, 14" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="f6fc838a-8db6-4ed4-9c0b-6a043b1a4779" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHySURBVDhPVZIhaBxBFIZHVKyoWBGxoiILJ7JQkYMTd3DmAicuEHEHEVeICCUihIqKqLoSokJEqAqnAldRuLo1gVWFrVs5EYGJODEi4omIERF//zfZpvTBz7LsfPO/9781uPkGHO0gHFN8iupgAJlT0wH8tAu/14UbF3CjAnZIXV3A4HAArCvg5gNwPYPX9/Md4JTP4y4wL4BxhkDJKIPrZ6i3Mhh1wY8T4FMK26NuK/htA0yooUHoUQ8W6Cfw7wxsZlBlCcFDgt8/Ekrg7hy8CPy9QyAc+hTfYz0DYZKh2WjBOM/pLprrBdwjIe8hTwFyZxHW7gX6W3R2mwblhoJzznE5g9DB3ZbRUXhBIBzo8lqPvJBn6tRgpaCmhq+7cabw3kAIixBSMIQXiE7Cb47z1Wx1lSrIqPGZczIIMAhtUeiqoM4VS7tgqpZuFbVU0E0Y91E3pucJebYZQbr91ypL9guUCcG3CnKpmBbwP5f/wtFWdQX3TYu0JQ5NJ8EiIWiHOcIe4S06/q4ZDhN94Dq4N+GKNJRYz7x0lGP1xrRgL4dMcnjGrLuTXyXCKI1BWAbh+bdg3cCPc1SEVmw1gs12Fm+y7V/hOiYuWaUJVjxYbyYoW2ipjjpjc/4FVSdDyb9B96NaqpicaqHiwVelKc72Z/gDsuYSGEJ1EcQAAAAASUVORK5CYII=" InformativeScreenshot="2e5edd553c4ebd740fc8fe623042a09e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                <uix:Target DesignTimeRectangle="1249, 374, 49, 17" FriendlyName="'chrome.exe eSatellite'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAARCAYAAAB0MEQqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEjSURBVEhL7ZNRDoMgDIa5FsluQ7yM8SQmXgMPsgeP0dkqpTTAXFgWt/nwRyiF9murWe4LfLsuiLPoDyDmAawx4MbM2YlUhfC9BdevIN2UPW8SFug2gM+dvagKhIfh5mDib86nQR+BwCB7B6gjYqRwb9YxI4kuJfaQ4OjWtaWxjHYsjNijTzhnH3W3Mg1FiCRxWTV6eF+vmjoDtvebXQGx3VgYZuVf6QT6UGy6+3wKChBYqRhY7jkJdQftSTVD9RQ0wyoIfZ8hCqBSeQgMIB4MwuRrEDn7EQgaQ9FFfKsZgkdB2kNQ9TAnj3bRek6s5K8gYrztf2mEmMCJGY6Kj1OCoUOigok9BCe43Zb4Yxy0IXhYR7WP0zt1MJEWXRBn0Q9ALPAApsT1Usg4HTEAAAAASUVORK5CYII=" SearchSteps="Image" TargetType="ImageBased" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NCheckState.Target>
+                                      </uix:NCheckState>
                                     </Sequence>
                                   </uix:NCheckState.IfNotExists>
                                   <uix:NCheckState.Target>
@@ -701,7 +758,13 @@
                               </Sequence>
                             </uix:NCheckState.IfNotExists>
                             <uix:NCheckState.Target>
-                              <uix:TargetAnchorable Accuracy="0.6" BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=e3b3c93a-705e-4d4d-b514-fff05afa56ec&amp;app=26" DesignTimeRectangle="816, 466, 64, 30" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="11c04240-25e8-4c2b-b7c2-71f5aef0d01a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAAAeCAYAAACc7RhZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ9SURBVFhH7Vc7cuMwDOWRUlpHcc3JMXwDjauUqdyn8YxKV+lzAc+ocZFii5RbYgEY4IIUaYnatZ1d+c3Q/OBD8BGgxg4WjiEBxxYa58CF1oDf9yL8vui3DbjnTmbTkSdg1UI48rGDduWg2V6BhHSvqRjY9RhjA+1RphUYJ4AwN9B/ANMIgA688/iLQLnHjODyWPnAOqegloxmC2ZP0NVSYv8e/LPo0166ZvyGZC76kBiTeDRG8tfqHmxHgiEmEqAplqRa0I0JanhMui4mAwNp9ySn3hxEbCIyuZ4v+OB9RS5vVLBjf+bt2vvMmc6oywB2rLehTYnBMZLjt3h0OkjWD8Ku6zjVLa0rau1KfhB1bwD1etM50IPJaSdk5Ta169av1S2tK2rtSn4Q4wTQoTjNaJKmpOpKanIKk87vrCinL63JmPq/XQLRGZK5QZ6AJMVDLREoCNyUZfTQhKCxzsQmfDKtrvqxweiYe5QHvzb4cR8DOysnpHODIQH3wIUAr40HAdIvFu7z9AlLbo8MkH6xeBAg/WLxIED66Th9QPP0Ck7b+uMu3+8zevBPb/BykukM1BHAh4837DaH8p+jq+OmBHzBy/oV/LtMvwVuSQDf/shtR+WhuhLk7hDKptl9sYRxwcZv3sJat1EdbBstulsTYOq931FwFJAGkATzfpCD0roJGtcH5BRsIqICrE1ib9D/+Dmp/WEGmACim5TGh06DnGODYOJUT2VlAqai4g3IbZYeJiWIkNrNsIn06C1SWS6mOlQQgNtx2tuAbQA0zqVtGuQMG7p9LT8mw9pb3/WoIoARpeKlBw3bWAkQJtmcv0AsXx/A3ysD/kcsnACAX+omO6RPKuRgAAAAAElFTkSuQmCC" InformativeScreenshot="2b50aaf7f417a3dba9edd6f7de55f88e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
+                              <uix:TargetAnchorable Accuracy="0.6" BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=4df9406b-4be2-4bd2-b02e-e00516133f19&amp;app=26" DesignTimeRectangle="804, 375, 62, 19" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="9f721595-0694-4093-992d-c1211850b5b8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD4AAAATCAYAAADI876sAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFvSURBVFhH7VWLrYMwDMxYZJ6oC6GsAssgsYprW7afEwiFqtWrFE6i+fgTn7nQAJ3iJt4bbuKMJUMMAYI9EdK8ivF3sY4RwmOS1TlsiQ8ZjOoyQR4CxPEL5OuzzmITt2KNEfIiy5M4Jk54t8Afx2viMEEKCX8RaE+oAL4GQ7Ius9T0aqg6UC3mq1eG8ydID/Gns3TP5TXRNnNIjVU9WiPly3oGx5GhxAniKqVKUuZbNibynHxD2QQsIM9kp9ERkJiiiXxfD3LwuWKXb5DFcT73bZrTDqcrb5wTavf10YbgHJuSRqRMBHbzIPy+zmvf1r7ialwjz/k7TqO+2T3Qh5DlJU3aOazI7/N639a+4mpcI88xcSLDcqJFLT31FQmyVMnnTwVtmdKezGn8tNQLDtVasCVeSdnuCoEOx8PYRh8QKxbvkcTYX5/31Ty+CJ3ziHbL64t+nWMT5+2Eei0oif8HGoV9Gzfx3nAT7w2dEgd4An/brKzw/jAqAAAAAElFTkSuQmCC" InformativeScreenshot="23ec11225f241fc942eee52a9e8589ad.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target Accuracy="0.6" DesignTimeRectangle="803, 394, 53, 19" FriendlyName="'chrome.exe eSatellite'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADUAAAATCAYAAAAwE0VbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEUSURBVFhH7VQxEoQgDPRJtj7F2nfwC0sre0tLKnufYOMDfEIOYuIA5+khjnPcsDOZEcImWRLM4A+RRMWCJCoWJFGxwF/UPEKRN5CxlSNM5HoeE1R5B/VMS4KfKBRkB+mFhJ6+n0ewqAXqsoFqoOVPIFQUdumkK9Zo8llK3MptZIt2QQ/igFOJbtvrBZ9RJnjg7xBlvJ+p1Ql1Eg7qJBgkFa/3jULU/pvgDxxL/AaT4/AJgZ0yglo3ToZC3MRXOAp4GXyOfaGidgO4BbqiNVzeBY51Tr9t9u3V5CVKhcCRM4swg+rvvZFxE1/g6C7x6KNAk2/GXuElCmGNwdGjV3Y2fhpfcdY/L/pLCdWdnYoFSVQcAHgBBqrJoKu8EuEAAAAASUVORK5CYII=" SearchSteps="Image" TargetType="ImageBased" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
                             </uix:NCheckState.Target>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
