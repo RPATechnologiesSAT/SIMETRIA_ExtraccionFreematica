@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1230,1846</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1768,2448</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Rellenar_Cuadrante_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="44">
@@ -116,21 +116,21 @@
       <AssemblyReference>System.Memory.Data</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Rellenar_Cuadrante" sap:VirtualizedContainerService.HintSize="704,1781" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Rellenar_Cuadrante" sap:VirtualizedContainerService.HintSize="764,2383" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="662,1691" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="702,2272" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="624,1454" sap2010:WorkflowViewState.IdRef="Sequence_26">
+        <Sequence sap:VirtualizedContainerService.HintSize="664,2044" sap2010:WorkflowViewState.IdRef="Sequence_26">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="582,61" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;--- Init Descarga Cuadrante ---&quot;]">
+          <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="602,52" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;--- Init Descarga Cuadrante ---&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -138,27 +138,27 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: CASVA_SEGURIDAD_SL" sap:VirtualizedContainerService.HintSize="582,1263" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: CASVA_SEGURIDAD_SL" sap:VirtualizedContainerService.HintSize="602,1841" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="548,1037" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="568,1624" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NCheckState DisplayName="Check App State 'chrome.exe eSatellite'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="506,945" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Timeout="30" Version="V3">
+                  <uix:NCheckState DisplayName="Check App State 'chrome.exe eSatellite'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="506,1509" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Timeout="30" Version="V3">
                     <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="462,719" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="462,1292" sap2010:WorkflowViewState.IdRef="Sequence_18">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="400,61" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Descargando informe generado...&quot;]">
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="400,52" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Descargando informe generado...&quot;]">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -166,7 +166,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:LogMessage>
-                        <uix:NClick ClickType="Single" DisplayName="Click 'Descargar Informe'" sap:VirtualizedContainerService.HintSize="400,61" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
+                        <uix:NClick ClickType="Single" DisplayName="Click 'Descargar Informe'" sap:VirtualizedContainerService.HintSize="400,52" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=3572af07-45a0-4ed6-9e54-12f8e80a81e2&amp;app=26" DesignTimeRectangle="211, 105, 24, 25" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="766358c8-c775-475d-b337-a0a8ef109436" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEnSURBVEhL7ZNRCoIwGMd3JL2K0EvQk3SC6AbSIcLXLhB0CmG91SF6EAocFLT2//KzuXQq5luDH45v2/+3TRXP+1Prh56Mv6CTXoLVetVK03yb3gJqVk3dFNWjWVSruwwToJU1FqDvk/QXoI9m1UUQfxBhbayaM+YEMtdEfLQ24TDsBCUIbxLITNbmgS9BepQ63voJlykJcPeDBQjgHR72h6qebBKdmjEQBikFCyFIMlhAfdNYcDqf3gJzOlcARgkQjmebYPQVIZhxr4jxCoqi0EqZwBIIsCi/5IQ0i3eZqnbPAgS6QGBngUYBAgF2PV/Mq91jDNAJTJiLncN4BQjHO8CTw1lgr/HRKKDrMEwmQIAX/GjWGh9fgl8jiqsRlJ/lFPwFHSj9AnDneUYMylXAAAAAAElFTkSuQmCC" InformativeScreenshot="783ab5ddb6ac6841d990da51810df83c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
                           </uix:NClick.Target>
@@ -177,17 +177,17 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NClick>
-                        <uix:NCheckState DisplayName="Pop-Up Error restricciones?" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="400,61" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Timeout="5" Version="V3">
+                        <uix:NCheckState DisplayName="Pop-Up Error restricciones?" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="400,52" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Timeout="5" Version="V3">
                           <uix:NCheckState.IfExists>
-                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,431" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,404" sap2010:WorkflowViewState.IdRef="Sequence_20">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Cerrando Pop-Up Restricciones...&quot;]" />
-                              <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe Restricciones'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Cerrando Pop-Up Restricciones...&quot;]" />
+                              <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe Restricciones'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
                                 <uix:NClick.Target>
                                   <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=3572af07-45a0-4ed6-9e54-12f8e80a81e2&amp;app=26" DesignTimeRectangle="1254, 589, 80, 25" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe Restricciones'" Guid="84c4d7a9-21a2-484a-b294-0d0017eb5ae4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFAAAAAZCAYAAACmRqkJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFoSURBVGhD7ZbLbcMwDEA1UjyOtUlhZBkDniSAR+gCPWSAHHxk9bVFmXGdUBWqgoeHQBTDwE+kHLU8FhDeRwQyQQLVx6dwEhHI5FDg/esuPEEEMhGBTEQgk6oCp16B6idyr1XqCbwN0F006EsHw43YL8IEWv1m/T3VBM7XDrrrvH5SOXz+rcAZhth5rhMHmHf7ZryVR48hbnNDTCkNk8sNksZtzx+IjW814lXhro0sFmvovjPxWPc96ghE0hKZ6zpKiDFL1k2jxqJiPSc55mXfQaR7vkaJSagiMB9bu167wQkgugB1X9pBe0m2y3zXEgKN+K3GGdGvUUGgP20kwhGkHQqkxit/eN/BpEBUI+38lgTaDnhy5/mHPhrhE3EkKROT/rbLa1CgHS/qrkFjHKTE7qRfIoZkhP0LIMs3rC8Nl+sPx63RX6iGBJan3MOXQAQyEYFMGhT4tzglUPgZEciEFCi8jghkscA3VIgIKi/SWc0AAAAASUVORK5CYII=" InformativeScreenshot="4f1c8b1b17aefa729d16398411959b8c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Restricciones' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
                                 </uix:NClick.Target>
@@ -213,7 +213,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NCheckState>
-                        <Pick DisplayName="Pick Ventana Por Color" sap:VirtualizedContainerService.HintSize="400,61" sap2010:WorkflowViewState.IdRef="Pick_2">
+                        <Pick DisplayName="Pick Ventana Por Color" sap:VirtualizedContainerService.HintSize="400,52" sap2010:WorkflowViewState.IdRef="Pick_2">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -327,15 +327,15 @@
                             </uix:NClick>
                           </PickBranch>
                         </Pick>
-                        <Sequence DisplayName="Rellenar Nombre Archivo y Guardar" sap:VirtualizedContainerService.HintSize="400,90" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                        <Sequence DisplayName="Rellenar Nombre Archivo y Guardar" sap:VirtualizedContainerService.HintSize="400,717" sap2010:WorkflowViewState.IdRef="Sequence_37">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Rellenando nombre fichero...&quot;]" />
-                          <uix:NClick ClickType="Single" DelayBefore="2" DisplayName="Click 'Tipo de Archivo'" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="NClick_21" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Rellenando nombre fichero...&quot;]" />
+                          <uix:NClick ClickType="Single" DelayBefore="2" DisplayName="Click 'Tipo de Archivo'" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NClick_21" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable Accuracy="1" BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=ae4113cd-1992-495b-82c0-22f66446dedd&amp;app=26" DesignTimeRectangle="344, 550, 166, 17" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="95bf4125-4bd1-4f00-9183-4dec9ca1ba81" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKYAAAARCAYAAABXR9e6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANwSURBVGhD7ZZtrqMwDEVZVlkP6oYqtkI3U6lbYWwnTmzHDszrdB4/ciRUEoy/chM67YPBBRnCHFySIczBJQFhbvsyTft03/KU5v2Y92ma9/UFg9e6z3z/WzwXyAfyva37O0/55LrEtTzzo49B33EfqGfcT84XrvmRMk491blN0wJefbZ7tWMfhOObcOff+3qrfrgX6Fu966DqQT/3o95L+r2K4mdhzvt8817mxf1lMRZSPlVgvaL7DfmMjm/cvLxpaCOz4OJ3cOFDcYCP1a0X7z3f8fzGflReKNigFkTUkwQK+dB1LOiEzMHDj1+Eudyd5uDOuy8Hjv8ntshe0UcN+YTYtxSZFZwvQPQVn5YasYi0NvWt4juaV5iY5h1J834+jc9/fU6sgxO/CHN92QZxE6RjGwRt7Och2aDQy+eJdmj7GfHfB1x79Fvn5seqxm1jba5IilcajQ0pfwnO5ML98Xwj3LM8OiNMyKEVTgTGTTm4goEeRPMKOydORY2uh+KTHc5LrSBRb2WvOj028YUw4Q6O59ZYOm6DtE1FGzmfxnqhsw+vaT17FR+xY0nyw03QosJ7/kV6tQj/kG+yieJKnwDW142Bc1H+LfL/2E+Eic+oF27PRd6FaD6C7eV7eJ9rdNcbaeMoYUrlVpGK59Y2LEY027ErvumZWayevfXdjCWdZyQYK36nlpxfFTcvauQb57WfIgawb/4uoX+5UCqe9NOK+ifCLFD9Mv9og7T1HGJ7Sz6y71yfyo9o42thssETHJSjVT63QbykpT3g2KmTGeDFq2KN7I3vZizpPPsrYZ6osYDznn3Cq1uOfQLRGMEVQUbzBp1LlHe/HpeeMDNqvYk2jhEmkB3XYuRzed/u4oRNBMfHIqgN7Nl7vuVYEj3DefTHv0ivljM1MoGIEOyr+h/VsZUYoRWivkTzT6yYMfnjO+Y/XuJMjtIX3tvemlgZtWGc+K0wKRl2itjA0hbH/OlhMTmJULPYTjzLmyBdImZk7/jGnU92zeLp3PCaH5sSIO1c9WWotnpjCD8Ux6kxo08o6VP2FMFndq6FTxd5Ff+if/X0Abx5U0dj74kf0PV4cC/05q69Fb2K1tuJD8Ic/FOc3X9tDk7Fr9fjxx/C/AJ0WgQn0NWgL85Brt+sJ4o/hDm4JEOYg0syhDm4IPv+B3UseT0m3D2iAAAAAElFTkSuQmCC" InformativeScreenshot="87d8df79587c4ee63e715f4fedad481a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
                             </uix:NClick.Target>
@@ -346,7 +346,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NClick>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Nombre Archivo'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="HardwareEvents" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Text="[in_RutaExportFolder+&quot;Cuadrantes_&quot;+in_Delegacion+&quot;_&quot;+Now.ToString(&quot;ddMMyy_HHmm&quot;)]" Version="V3">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Nombre Archivo'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="HardwareEvents" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Text="[in_RutaExportFolder+&quot;Cuadrantes_&quot;+in_Delegacion+&quot;_&quot;+Now.ToString(&quot;ddMMyy_HHmm&quot;)]" Version="V3">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=e37fcc0e-35d9-404a-9839-5191c7b68c23&amp;app=26" DesignTimeRectangle="340, 469, 717, 26" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="381e79fe-86e0-4e07-af5f-a2d8356fb90e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAs0AAAAaCAYAAABM62E/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC+SURBVHhe7dZBCoNAAATB/XY+mo942KOBEBCTaHu3ChrmCTPmMldJkiRJx71P83g8JUmSJH31c5oBAICN0wwAAOHyaR5jfBYAANyL0wwAAMFpBgCA4DQDAEBwmgEAIDjNAAAQnGYAAAhOMwAABKcZAACC0wwAAMFpBgCA4DQDAEBwmgEAIDjNAAAQnGYAAAiXTzMAANyV0wwAAMFpBgCA4DQDAED4e5olSZIk7dudZkmSJEnHOc2SJEnSaXN9AXdjcEuOTJPFAAAAAElFTkSuQmCC" InformativeScreenshot="80278c979e6d5f1b71716aadb68f88a7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive">
                                 <uix:TargetAnchorable.Anchors>
@@ -363,7 +363,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NTypeInto>
-                          <uix:NClick ClickType="Single" DisplayName="Click 'Guardado'" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
+                          <uix:NClick ClickType="Single" DisplayName="Click 'Guardado'" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=e37fcc0e-35d9-404a-9839-5191c7b68c23&amp;app=26" DesignTimeRectangle="854, 538, 90, 26" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="0b18b8bc-dbdb-4eea-bbac-32abf8b6583b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFoAAAAaCAYAAAA38EtuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFISURBVGhD7ZZRDoMgDEA5kh5HbrIQL7OEkyzxCLvAPjzAPvzshOlWEJkutXzYj5cIZV36gKoangMIx/MRrS534QBENBOrovtHLxAgopkQ0UyIaCZENBPlRN8M1EqBmqkMdKl1JFjQqgZzS8V4KCPaSw4Lt40Gi9eQckrRHZhKgb6mYkdxRtH+NOdObywlHNsGtZvGBmt0U4/zU27UmurW/JeDkDKiUT/uWleYK3oWkRf9Bc+7Zye0Q7HvrXn/x94ctJQRvTgxccFYSjS+6mljMpsTbeZfOYjhF50sCM/FcTQONsn1+pXf5ERvzUFMAdHzVcanGhcZvSz96Zti7nkW6IWtSXLjldaxOQctRUR7gusb9UYcGz/74k3w89U4nzuNKEf4MtyRg5Byok+GiGZCRDMhopkQ0UyIaCZ+ihZoEdFMLEQLRzLAC3j1gennoykDAAAAAElFTkSuQmCC" InformativeScreenshot="141902f177dfb11cccd9d3af32135028.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
                             </uix:NClick.Target>
@@ -374,7 +374,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NClick>
-                          <Assign sap:VirtualizedContainerService.HintSize="338,71" sap2010:WorkflowViewState.IdRef="Assign_2">
+                          <Assign sap:VirtualizedContainerService.HintSize="338,62" sap2010:WorkflowViewState.IdRef="Assign_2">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[out_NombreExportFichero]</OutArgument>
                             </Assign.To>
@@ -382,17 +382,18 @@
                               <InArgument x:TypeArguments="x:String">["Cuadrantes_"+in_Delegacion+"_"+Now.ToString("ddMMyy_HHmm")+".xls"]</InArgument>
                             </Assign.Value>
                           </Assign>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Fichero guardado: &quot;+out_NombreExportFichero]" />
                         </Sequence>
-                        <uix:NCheckState DisplayName="Pop-Up Exportación finalizada?" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="400,61" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Timeout="60" Version="V3">
+                        <uix:NCheckState DisplayName="Pop-Up Exportación finalizada?" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="400,52" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Timeout="60" Version="V3">
                           <uix:NCheckState.IfExists>
-                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,431" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,404" sap2010:WorkflowViewState.IdRef="Sequence_24">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Informe de cuadrante guardado correctamente.&quot;]" />
-                              <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Informe de cuadrante guardado correctamente.&quot;]" />
+                              <uix:NClick ClickType="Single" DisplayName="Click 'chrome.exe eSatellite'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="35494f9b-9500-4a4a-a26a-32c88987b670" Version="V3">
                                 <uix:NClick.Target>
                                   <uix:TargetAnchorable BrowserURL="https://basic-02.freefy.cloud/app-sessions?session=e37fcc0e-35d9-404a-9839-5191c7b68c23&amp;app=26" DesignTimeRectangle="1100, 625, 76, 24" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe eSatellite'" Guid="aeceb229-8b83-4492-8f10-d7eeb886b440" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAYCAYAAABQiBvKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFWSURBVFhH7ZZRDsIgDEA5khxn3MQsu4zJTmKyI3gBPzyAH/usFIYUZNO6kTjTj/dB2zD7VnBqvI8gfI4IY/IUpo4X4Q0ijElR2O16EzJEGBMRxkSEMRFhTOoLO7eglYb2XMitpgdTbe8y1YUNnQbTGNDdUMyv4++EDdAeDPTY2KGFIclhswoU0vRvYlZKZ3zcYk5ZrcW/EHxeHot7mEaDevkdPOoKw+M4Nd43oVEPrqOUGPM12HiYnElMqD2hOHwJITc3YZijdVTg91QVlkjCRvOpSRqdxBDiJNFaui7s44SGPRbqvqSisFcBy5Mx11Qep+ssh7KeR26hbgX1hCUT5UmPXH5ESjEEm41x/BMpS7HQZ7pJ25Gw/M5yJBK9CDd5IeY+QcrT6C5sF08bd3ehjXuhdE9DJO1A2HZs1+wWiDAmOxD2W4gwJovChHlEGJNEmPAJIzwAud+I591xzSwAAAAASUVORK5CYII=" InformativeScreenshot="2fd66cc0a18e85d7d52fd595e4da3185.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='eSatellite' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V1" Visibility="Interactive" />
                                 </uix:NClick.Target>
@@ -444,7 +445,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="628,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="668,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -455,7 +456,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Rethrow sap:VirtualizedContainerService.HintSize="334,32" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
+            <Rethrow sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
           </ActivityAction>
         </Catch>
       </TryCatch.Catches>
